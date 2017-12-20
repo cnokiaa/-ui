@@ -1,0 +1,106 @@
+@import 'base';
+
+.hyintro{
+	margin-top:#{40/2/$htmlfsize}rem;
+	background:$divBgColor;
+	color:#999;
+	padding:0 #{16/2/$htmlfsize}rem;
+	li{
+		border-bottom:1px solid $bgColor;
+		h3{
+			font-size:#{16/$htmlfsize}rem;
+			color:$fontColor;
+			height:#{80/2/$htmlfsize}rem;
+			line-height:#{80/2/$htmlfsize}rem;
+			position:relative;
+			&:after{
+				content:'';
+				display: inline-block;
+			    vertical-align: 3px;
+			    position:absolute;
+				right:5px;
+				top:10px;
+				transition: all ease 0.5s;
+			    -moz-transition: all ease 0.5s;
+			    -webkit-transition: all ease 0.5s;
+			    -o-transition: all ease 0.5s;
+			    -ms-transition: all ease 0.5s;
+				@extend %jt;
+			}
+		}
+		pre{
+			font-size:#{14/$htmlfsize}rem;
+			width:100%;
+			word-break: break-all;
+			word-wrap: break-word;
+			white-space: pre-wrap;
+			white-space: -moz-pre-wrap;
+			white-space: -pre-wrap;
+			white-space: -o-pre-wrap;
+			line-height:30px;
+				transition: all ease 0.5s;
+			    -moz-transition: all ease 0.5s;
+			    -webkit-transition: all ease 0.5s;
+			    -o-transition: all ease 0.5s;
+			    -ms-transition: all ease 0.5s;
+			display:none;
+		}
+		b{
+			color:#666;
+		}
+		&.active{
+			h3{
+				&:after{
+					top:15px;
+					transition: all ease 0.5s;
+				    -moz-transition: all ease 0.5s;
+				    -webkit-transition: all ease 0.5s;
+				    -o-transition: all ease 0.5s;
+				    -ms-transition: all ease 0.5s;
+					transform:rotate(-135deg);
+					-ms-transform:rotate(-135deg);
+					-moz-transform:rotate(-135deg);
+					-webkit-transform:rotate(-135deg);
+					-o-transform:rotate(-135deg);
+				}
+			}
+			pre{
+				display:block;
+				transition: all ease 0.5s;
+			    -moz-transition: all ease 0.5s;
+			    -webkit-transition: all ease 0.5s;
+			    -o-transition: all ease 0.5s;
+			    -ms-transition: all ease 0.5s;
+			}
+		}
+	}
+}
+
+.lev{
+	background:url(../img/lev.png) no-repeat 0 -46px;
+	width:21px;
+	height:24px;
+	display:inline-block;
+	vertical-align:middle;
+	margin-left:5px;
+	&.lev2{
+		background-position: 0 -94px;
+	}
+	&.lev3{
+		background-position: 0 -70px;
+	}
+	&.lev4{
+		background-position: 0 0;
+	}
+	&.lev5{
+		background-position: 0 -23px;
+	}
+}
+
+.hyintroh{
+	background:#fff;
+	font-size:14px;
+	padding:0 #{16/2/$htmlfsize}rem;
+	height:55px;
+	line-height:55px;
+}

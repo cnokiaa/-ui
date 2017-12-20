@@ -1,0 +1,326 @@
+@import "base";
+$time1:.8s;
+$time2:.4s;
+%dd{
+	animation-timing-function:ease-in;
+	-webkit-animation-timing-function:ease-in;
+	-webkit-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+	animation-iteration-count:1;
+	-webkit-animation-iteration-count:1;
+}
+
+.down{
+	width:100%;
+	overflow:hidden;
+	.down_header{
+		background:#ffeb40;
+		color:#7d4436;
+		font:bold 24px/190px 'Microsoft YaHei';
+		text-align:center;
+		position:relative;
+		opacity:0;
+		animation-name:m2fall2;
+		-webkit-animation-name:m2fall2;
+		animation-duration:$time1;
+		-webkit-animation-duration:$time1;
+		animation-delay:$time1;
+		-webkit-animation-delay:$time1;
+		@extend %dd;
+		span{
+			position:relative;
+		}
+		&:before{
+			content:'';
+			background:url(../img/sc3.png) no-repeat center center;
+			width:100%;
+			height:158px;
+			transform: rotate(-180deg);
+		    -ms-transform: rotate(-180deg);
+		    -moz-transform: rotate(-180deg);
+		    -webkit-transform: rotate(-180deg);
+		    -o-transform: rotate(-180deg);
+		    position:absolute;
+		    left:0;
+		    top:0;
+		}
+	}
+	.down_main{
+		position:relative;
+		margin-top:-45px;
+		text-align:center;
+		opacity:0;
+		animation-name:m2fall3;
+		-webkit-animation-name:m2fall3;
+		animation-duration:$time2;
+		-webkit-animation-duration:$time2;
+		animation-delay:$time2;
+		-webkit-animation-delay:$time2;
+		@extend %dd;
+		i{
+			width:30%;
+			height:80px;
+			display:inline-block;
+			border:5px solid #fff;
+			border-radius:100%;
+			background:#fff;
+			&.logo{
+				background:url(../img/logo.png) no-repeat;
+				width:80px;
+				position:relative;
+				z-index:9;
+				animation-name: m2yball;
+				-webkit-animation-name: m2yball;
+				animation-duration: 3s;
+				-webkit-animation-duration: 3s;
+				animation-delay: .5s;
+				-webkit-animation-delay: .5s;			
+				@extend %dd;
+				animation-iteration-count: infinite;
+				-webkit-animation-iteration-count: infinite;
+			}
+			&.ii{
+				position:absolute;
+				animation-duration:2s;
+				-webkit-animation-duration:2s;
+				animation-delay:1s;
+				-webkit-animation-delay:1s;
+				animation-iteration-count:infinite;
+				-webkit-animation-iteration-count:infinite;
+				@extend %dd;
+				&.i1{
+					left:-10%;
+					top:0;
+
+				animation-name:m2ball;
+				-webkit-animation-name:m2ball;
+				}
+				&.i2{
+					left:10%;
+					top:25px;
+
+				animation-name:m2ball1;
+				-webkit-animation-name:m2ball1;
+				}
+				&.i3{
+					right:10%;
+					top:25px;
+
+				animation-name:m2ball1;
+				-webkit-animation-name:m2ball1;
+				}
+				&.i4{
+					right:-10%;
+					top:0;
+
+				animation-name:m2ball;
+				-webkit-animation-name:m2ball;
+				}
+			}
+		}
+		.godown{
+			display:inline-block;
+			background:$defaultBgColor;
+			color:#fff;
+			line-height:#{70/2/$htmlfsize}rem;
+			height:#{70/2/$htmlfsize}rem;
+			width:#{268/2/$htmlfsize}rem;
+			border-radius:5px;
+			font-size:14px;
+			margin:20px 0 40px;
+		}
+		.downm{
+			p{
+				font-size:14px;
+				color:#666;
+			}
+			img{
+				margin-top:10px;
+			}
+		}
+	}
+}
+
+#showwc{position:fixed;left:0;top:0;width:100%;height:100%;background:#000;opacity:.7;}
+#showwc img{max-width:100%;float:right;}
+#showwc.hide{display:none;}
+
+
+@mixin m2ball{
+	0% {
+		opacity:1;
+		-webkit-transform:translateY(-2px);
+		transform:translateY(-2px)
+	}
+	50% {
+		opacity:1;
+		-webkit-transform:translateY(0px);
+		transform:translateY(0px)
+	}
+	100% {
+		opacity:1;
+		-webkit-transform:translateY(-2px);
+		transform:translateY(-2px)
+	}
+}
+@-webkit-keyframes m2ball{
+	@include m2ball;
+}
+@-moz-keyframes m2ball{
+	@include m2ball;
+}
+@-o-keyframes m2ball{
+	@include m2ball;
+}
+@-ms-keyframes m2ball{
+	@include m2ball;
+}
+@keyframes m2ball{
+	@include m2ball;
+}
+
+@mixin m2ball1{
+	0% {
+		-webkit-transform:translateY(-10px);
+		transform:translateY(-10px);
+		-webkit-transform:translateX(-10px);
+		transform:translateX(-10px);
+	}
+	50% {
+		-webkit-transform:translateY(0);
+		transform:translateY(0);
+		-webkit-transform:translateX(0);
+		transform:translateX(0);
+	}
+	100% {
+		-webkit-transform:translateY(-10px);
+		transform:translateY(-10px);
+		-webkit-transform:translateX(-10px);
+		transform:translateX(-10px);
+	}
+}
+@-webkit-keyframes m2ball1{
+	@include m2ball1;
+}
+@-moz-keyframes m2ball1{
+	@include m2ball1;
+}
+@-o-keyframes m2ball1{
+	@include m2ball1;
+}
+@-ms-keyframes m2ball1{
+	@include m2ball1;
+}
+@keyframes m2ball{
+	@include m2ball;
+}
+
+@mixin m2yball {
+	0% {
+		-webkit-transform: scale(1);
+		transform: scale(1)
+	}
+
+	60% {
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1)
+	}
+
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1)
+	}
+}
+@-webkit-keyframes m2yball{
+	@include m2yball;
+}
+@-moz-keyframes m2yball{
+	@include m2yball;
+}
+@-o-keyframes m2yball{
+	@include m2yball;
+}
+@-ms-keyframes m2yball{
+	@include m2yball;
+}
+@keyframes m2yball{
+	@include m2yball;
+}
+
+@mixin m2fall3{
+	0% {
+		opacity:0;
+		-webkit-transform:translate3d(0,-200px,0);
+		transform:translate3d(0,-200px,0)
+	}
+	30% {
+		opacity:1;
+		-webkit-transform:translate3d(0,-200px,0);
+		transform:translate3d(0,-200px,0)
+	}
+	65% {
+		opacity:1;
+		-webkit-transform:translate3d(0,-100px,0);
+		transform:translate3d(0,-100px,0)
+	}
+	100% {
+		opacity:1;
+		-webkit-transform:translate3d(0,0,0);
+		transform:translate3d(0,0,0)
+	}
+}
+
+@-webkit-keyframes m2fall3{
+	@include m2fall3;
+}
+@-moz-keyframes m2fall3{
+	@include m2fall3;
+}
+@-o-keyframes m2fall3{
+	@include m2fall3;
+}
+@-ms-keyframes m2fall3{
+	@include m2fall3;
+}
+@keyframes m2fall3{
+	@include m2fall3;
+}
+
+@mixin m2fall2{
+	0% {
+		opacity:0;
+		-webkit-transform:translate3d(0,30px,0);
+		transform:translate3d(0,30px,0)
+	}
+	30% {
+		opacity:1;
+		-webkit-transform:translate3d(0,30px,0);
+		transform:translate3d(0,30px,0)
+	}
+	65% {
+		opacity:1;
+		-webkit-transform:translate3d(0,5px,0);
+		transform:translate3d(0,5px,0)
+	}
+	100% {
+		opacity:1;
+		-webkit-transform:translate3d(0,0,0);
+		transform:translate3d(0,0,0)
+	}
+}
+
+@-webkit-keyframes m2fall2{
+	@include m2fall2;
+}
+@-moz-keyframes m2fall2{
+	@include m2fall2;
+}
+@-o-keyframes m2fall2{
+	@include m2fall2;
+}
+@-ms-keyframes m2fall2{
+	@include m2fall2;
+}
+@keyframes m2fall2{
+	@include m2fall2;
+}

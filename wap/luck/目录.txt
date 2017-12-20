@@ -1,0 +1,7 @@
+demo.html	转盘抽奖
+demo2.html	九宫格抽奖
+demo3.html	六格抽奖
+bd.html		绑定并登录
+dz.html		地址
+jp.html		我的奖品
+yhj.html	我的优惠券

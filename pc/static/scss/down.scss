@@ -1,0 +1,39 @@
+@import 'base';
+
+.down{
+	width:700px;
+	margin:0 auto;
+	padding:75px 0;
+	@extend %of;
+	.down-left{
+		float:left;
+		p{
+			color:#ccc;
+			font-size:16px;
+			b{
+				color:$fontColor;
+				font-size:24px;
+			}
+		}
+		img{
+			margin-top:40px;
+		}
+	}
+	.down-right{
+		float:right;
+		width:200px;
+		margin-top:120px;
+		text-align:center;
+		a{
+			@extend %downa;
+			width:99%;
+			margin-top:15px;
+			&.ios{
+				margin-bottom:35px;
+			}
+			&.android{
+				margin-top:20px;
+			}
+		}
+	}
+}

@@ -1,0 +1,252 @@
+@import 'base';
+
+.book{
+	width:$divWidth;
+	margin:0 auto;
+	.crumbs{
+		@extend %crumbs;
+	}
+}
+
+.dinnerinfo{
+	width:980px;
+	margin:0 auto;
+	margin-bottom:40px;
+	h3{
+		font-size:24px;
+		color:#333;
+		text-indent:15px;
+		font-weight:normal;
+		margin-bottom:10px;
+	}
+}
+
+.dinnerinfo-main{	
+	border:1px solid $borderColor;
+	border-top:none;
+	h4{
+		background:$bgColor;
+		font-size:20px;
+		text-indent:15px;
+		height:50px;
+		line-height:50px;
+		font-weight:normal;
+		border:1px solid $borderColor;
+		border-width:1px 0;
+		margin-bottom:20px;
+	}
+	dl{
+		font-size:18px;
+		margin-bottom:10px;
+		dt{
+			display:inline-block;
+			color:#bebebe;
+			vertical-align: top;
+			width:155px;
+			text-align:right;
+			height:40px;
+			line-height:40px;
+			margin-right:5px;
+		}
+		dd{
+			display:inline-block;
+			width:725px;
+			position:relative;
+			.hint{
+				position:absolute;
+				right:10px;
+				top:0;
+				height:40px;
+				line-height:40px;
+				color:$redColor;
+				font-size:14px;
+			}
+			.help{
+				@extend %helpicon;
+				bottom:10px;
+			}
+			textarea{
+				width:100%;				
+				border:1px solid $borderColor;
+				font-size:18px;
+			}
+			input[type="text"]{
+				width:100%;
+				border:1px solid $borderColor;
+				outline:none;
+				height:40px;
+				line-height:40px;
+				text-indent:15px;
+				font-size:18px;
+				&.starttime,&.endtime{
+					width:48%;
+					float:right;
+				}
+				&.starttime{
+					float:left;
+				}
+			}
+			input[type="radio"]{
+				@extend %radio;
+				vertical-align: middle;
+				margin-left:10px;
+			}
+			label{
+				width:190px;
+				display:inline-block;
+				height:40px;
+				line-height:40px;
+			}
+		}
+		&:after{
+			@extend %clear;
+		}
+	}
+	.btn{
+		width:180px;
+		margin:0 auto;
+		margin-top:20px;
+		margin-bottom:45px;
+		button{
+			width:180px;
+			background:$redColor;
+			font-size:20px;
+			color:#fff;
+			line-height:45px;
+			height:45px;
+			border:none;
+			border-radius:5px;
+			outline:none;
+		}
+	}
+}
+
+.booking-success{
+	border:1px solid $borderColor;
+	width:$divWidth;
+	margin:0 auto;
+	margin-top:45px;
+	text-align:center;
+	padding:185px 0;
+	.bs-info{
+		img{
+			display:inline-block;
+		}
+		div{
+			display:inline-block;
+			font-size:18px;
+			vertical-align: super;
+			p{
+				font-size:16px;
+				color:#bebebe;
+			}
+		}
+	}
+	.btn{
+		margin-top:70px;
+		a{
+			width:185px;
+			height:40px;
+			border-radius:3px;
+			color:#fff;
+			font-size:18px;
+			line-height:40px;
+			text-align:center;
+			display:inline-block;
+			background:$redColor;
+			&:last-child{
+				background:#f1a400;
+				margin-left:30px;
+			}
+		}
+	}
+}
+
+
+.booking-pay{
+	width:$divWidth;
+	margin:0 auto;
+	.crumbs{
+		@extend %crumbs;
+	}
+	.bp-main{
+		width:980px;
+		margin:0 auto;
+		h3{
+			font-size:24px;
+			color:#333;
+			line-height:50px;
+			height:50px;
+			font-weight:normal;
+			text-indent:15px;
+		}
+		.bp-c{
+			border:1px solid $borderColor;
+			.bp-c-info{
+				background:$bgColor;
+				font-size:16px;
+				padding:30px 20px 10px;
+				border-bottom:1px solid $borderColor;
+				p{
+					margin-bottom:15px;
+				}
+				b{
+					color:$redColor;
+				}
+			}
+		}
+		.bp-type{
+			padding:10px 15px;
+			h4{
+				border-bottom:1px solid $borderColor;
+				font-size:20px;
+				color:#333;
+				font-weight:normal;
+				height:50px;
+				line-height:50px;
+			}
+			.btn{
+				margin:80px 0;
+				@extend %of;
+				button{
+					float:right;
+					background:$redColor;
+					color:#fff;
+					font-size:20px;
+					height:45px;
+					width:180px;
+					border:none;
+					outline:none;
+					border-radius:5px;
+				}
+			}
+			.bp-typec{
+				padding:25px 0;
+				border-bottom:1px solid $borderColor;
+				label{
+					height:50px;
+					line-height:50px;
+					width:260px;
+					display:inline-block;
+					input[type="radio"]{
+						@extend %radio;
+					}
+					i{
+						background:url(../images/pay.png) no-repeat 0 0;
+						height:50px;
+						width:140px;
+						border:1px solid $borderColor;
+						display:inline-block;
+						vertical-align: middle;
+						&.alipay{
+							background-position:0 -50px;
+						}
+						&.unpay{
+							background-position:0 -100px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

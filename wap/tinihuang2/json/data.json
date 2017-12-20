@@ -1,0 +1,89 @@
+{
+    "status": "success",
+    "errcode": "0000",
+    "errmsg": "成功",
+    "data": {
+        "industrys": [
+            {
+                "industrycn": "农、林、牧、渔业",
+                "industryid": "1"
+            },
+            {
+                "industrycn": "采矿业",
+                "industryid": "2"
+            },
+            {
+                "industrycn": "制造业",
+                "industryid": "3"
+            },
+            {
+                "industrycn": "电力、热力、燃气及水生产和供应业",
+                "industryid": "4"
+            },
+            {
+                "industrycn": "建筑业",
+                "industryid": "5"
+            },
+            {
+                "industrycn": "批发和零售业",
+                "industryid": "6"
+            },
+            {
+                "industrycn": "交通运输、仓储和邮政业",
+                "industryid": "7"
+            },
+            {
+                "industrycn": "住宿和餐饮业",
+                "industryid": "8"
+            },
+            {
+                "industrycn": "信息传输、软件和信息技术服务业",
+                "industryid": "9"
+            },
+            {
+                "industrycn": "金融业",
+                "industryid": "10"
+            },
+            {
+                "industrycn": "房地产业",
+                "industryid": "11"
+            },
+            {
+                "industrycn": "租赁和商务服务业",
+                "industryid": "12"
+            },
+            {
+                "industrycn": "科学研究和技术服务业",
+                "industryid": "13"
+            },
+            {
+                "industrycn": "水利、环境和公共设施管理业",
+                "industryid": "14"
+            },
+            {
+                "industrycn": "居民服务、修理和其他服务业",
+                "industryid": "15"
+            },
+            {
+                "industrycn": "教育",
+                "industryid": "16"
+            },
+            {
+                "industrycn": "卫生和社会工作",
+                "industryid": "17"
+            },
+            {
+                "industrycn": "其他",
+                "industryid": "21"
+            },
+            {
+                "industrycn": "公共管理、社会保障和社会组织",
+                "industryid": "19"
+            },
+            {
+                "industrycn": "国际组织",
+                "industryid": "20"
+            }
+        ]
+    }
+}

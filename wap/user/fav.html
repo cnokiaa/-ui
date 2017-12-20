@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="renderer" content="webkit">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="format-detection" content="telephone=no" />
+<title>爱好</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" href="static/css/my.css" />
+</head>
+<body>
+<header>
+	<a href="javascript:history.go(-1);" class="headcha"><i class="icon-back">返回</i></a>
+	<h1>爱好</h1>
+</header>
+<div class="fav">
+	<dl class="editm">
+		<dt>我的选择</dt>
+		<dd><a data-id="1">读书</a></dd>
+	</dl>
+	<dl class="choosem">
+		<dt>请选择</dt>
+		<dd>
+			<a data-id="1">读书</a><a data-id="2">读2书</a><a data-id="3">读3书</a><a data-id="4">读12书</a><a data-id="5">读23书</a>
+		</dd>
+	</dl>
+</div>
+<script src="static/js/zepto.min.js"></script>
+<script>
+$(".choosem").delegate("a","tap",function(){
+	var did = $(this).attr('data-id'), ss = "";
+	if($(this).hasClass("active")){
+		$(".editm a[data-id='"+did+"']").remove();
+		$(this).removeClass("active");
+	} else {
+		$(".editm p").remove();
+		$(".editm a").each(function() {
+			ss += $(this).attr("data-id") + "|";
+		});
+		var dd = ss.split("|");
+		if (dd.indexOf(did) < 0) {
+			$(".editm dd").append("<a data-id="+ $(this).attr('data-id')+ ">" + $(this).html()+ "</a>");
+		}
+		$(this).addClass("active");
+	}
+});
+/*$(".editm").delegate("a","tap",function(){
+	var did = $(this).attr('data-id'),ss = "";
+	$(".choosem a").each(function() {
+		ss += $(this).attr("data-id") + "|";
+	});
+	var dd = ss.split("|");
+	if (dd.indexOf(did) < 0) {
+		$(".choosem dd").append("<a data-id=" + $(this).attr('data-id') + ">" + $(this).html() + "</a>");
+	}
+	$(this).remove();
+	if (!$(".editm a").length > 0) {
+		$(".editm dd").html("<p>暂时未选择任何爱好</p>");
+	}
+});*/
+</script>
+</body></html>

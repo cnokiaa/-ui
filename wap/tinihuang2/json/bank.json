@@ -1,0 +1,39 @@
+{
+	"status": "success",
+	"errcode": "0000",
+	"errmsg": "成功",
+	"data": {
+		"banks": [
+			{
+				"bankcode": "00001",
+				"bankname": "农业银行",
+				"bankcard" : "8888888888888888"
+			},
+			{
+				"bankcode": "00002",
+				"bankname": "农业银行",
+				"bankcard" : "8888888888888888"
+			},
+			{
+				"bankcode": "00001",
+				"bankname": "农业银行",
+				"bankcard" : "8888888888888888"
+			},
+			{
+				"bankcode": "00001",
+				"bankname": "农业银行",
+				"bankcard" : "8888888888888888"
+			},
+			{
+				"bankcode": "00001",
+				"bankname": "农业银行",
+				"bankcard" : "8888888888888888"
+			},
+			{
+				"bankcode": "00001",
+				"bankname": "农业银行",
+				"bankcard" : "8888888888888888"
+			}
+		]
+	}
+}

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" style="font-size:10px;">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>亲爱的！生日快乐！</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<style>
+#divdown1{font-size: 10rem;
+    color: #fff;
+    font-family: 'Nixie One', cursive;
+    font-weight: 300;
+    text-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+	text-align:center;
+	width:100%;
+}
+.a_demo_five {
+	text-align:center;
+    background-color: #3bb3e0;
+    width: 185px;
+   	margin:30px auto;
+    display:block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-image: linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+    background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(44,160,202)), color-stop(1, rgb(62,184,229)) );
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -webkit-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+    -moz-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+    -o-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+    box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+}
+/* .a_demo_five:before {
+    background-color: #fff;
+    background-image: url(http://www.html5tricks.com/demo/CSSButtonsPseudoElements/images/heart.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    content: "";
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    top: -30px;
+    left: 0px;
+    margin-top: -11px;
+    z-index: -1;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+} */
+.a_demo_five:active {
+	top:0px;
+	background-image: linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
+	background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, rgb(62,184,229)),
+	color-stop(1, rgb(44,160,202))
+	);
+	-webkit-box-shadow: inset 0px 4px 1px #0b698b, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
+	-moz-box-shadow: 0px 2px 0px 1px #156785, 0px 5px 3px #999;
+	-o-box-shadow: 0px 2px 0px 1px #156785, 0px 5px 3px #999;
+	box-shadow: inset 0px 4px 1px #0b698b, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
+}
+.a_demo_five:active::before {
+	top: -30px;	
+	-webkit-box-shadow: 0px 3px 0px #ccc;
+	-moz-box-shadow: 0px 3px 0px #ccc;
+	-o-box-shadow: 0px 3px 0px #ccc;
+	box-shadow: 0px 3px 0px #ccc;
+}
+#container_buttons {
+    margin: 0 auto;
+    background: rgba(255,255,255,0.3);
+    padding: 60px 60px 30px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.09) inset;
+}
+.hided{display:none;}
+#kl{border:none;background:#fff;border-radius:25px;line-height:45px;width:200px;margin:0 auto;display:block;font:16px/45px 'Microsoft YaHei';color:#000;text-align: center;}
+.heart {
+  background: url(http://demo.htmleaf.com/1511/201511131551/images/web_heart_animation.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+  cursor: pointer; 
+  background-size: 2900%; //实际背景图片尺寸2900px
+}
+.heart:hover{
+  background-position: right; //显示最后一个红心帧
+}
+.likeCount{
+  margin-top: 13px;
+  margin-left: 28px;
+  font-size: 16px;
+  color: #999999
+}    
+ 
+.heart:active {
+  -webkit-animation-name: heartBlast;
+  animation-name: heartBlast;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: steps(28); 
+  animation-timing-function: steps(28);
+  background-position: right;
+}
+
+@-webkit-keyframes heartBlast {
+  0% {background-position: left;}
+  100% {background-position: right;}
+}
+ 
+@keyframes heartBlast {
+  0% {background-position: left;}
+  100% {background-position: right;}
+}     
+#asd path{
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: dash 5s linear infinite;
+  animation: dash 5s linear infinite;
+}
+
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}       
+</style>
+</head>
+<body style="background: #772953;">
+	
+</body>
+
+</head> 
+<body> 
+<div style="width:100%;text-align:center;margin-top:20px;">
+<!-- <svg version="1.1" baseProfile="full" viewBox="0 0 45 96" id="m3path" height="190px" width="90px" class="aa">
+    <switch>
+    <path stroke="rgb( 248, 104, 189 )" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+       d="M5,28 
+       C20,28 35,28 40,28 
+       C40,28 22,55 5,70 
+       C5,70 35,70 40,70"/>
+     <foreignObject>
+        <div class="m3-svg-nosupport"></div>
+     </foreignObject>
+ </switch>
+</svg>
+<svg aria-hidden="true" role="img" viewBox="0 0 44 96" height="190px" width="88px" class="letter letter-s letter-2 aa">
+  <path d="m 2 48 m 0 -20 a 20 20 0 1 1 0 40 a 20 20 0 1 1 0 -40" stroke-width="1" stroke-linecap="butt" stroke="#f8f8f8" fill="none" style="stroke-dashoffset: 251.363; stroke-dasharray: 125.681, 157.102, 31.4204;"></path>
+  <path d="m 42 48 m 0 -20 a 20,20 0 1 1 0,40 a 20 20 0 1 1 0 -40" stroke-width="1" stroke-linecap="butt" stroke="#f8f8f8" fill="none" style="stroke-dashoffset: 251.363; stroke-dasharray: 125.681, 93.2611, 33.4204, 92.2611, 125.681;"></path>
+</svg>
+<svg aria-hidden="true" role="img" viewBox="0 0 45 96" height="190px" width="90px" class="letter letter-h letter-3 aa">
+  <path stroke="rgb( 106, 72, 247 )" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+       d="M5 0
+       c15,70 5,70 5,70
+       C5,70 35,70 40,65"/>
+
+</svg> -->
+
+<svg id="asd" xmlns="http://www.w3.org/2000/svg" width="180px" height="100px" >
+<g>
+  <g>
+    <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M49.192,26.985c2.842,2.064-3.588,10.23-4.676,11.787
+  c0.078-0.111-4.145,6.493-4.36,3.646c-0.107-1.419,3.846-3.279,5.227-3.605c3.159-0.747,6.843-0.329,10.049-0.327
+  c3.214,0.002,6.443-0.082,9.655,0.004c-0.39,1.524-3.214,3.181-4.379,4.053c-2.156,1.615-4.704,2.853-7.119,4.055
+  c-5.325,2.65-10.765,6.193-16.597,7.396c-5.259,1.085-10.521,1.049-15.846,1.409c0.487,0.151,1.224,0.114,1.811,0.112
+  c4.666-0.011,9.332,0.001,13.999,0.001c5.246,0,10.497-0.079,15.697,0.289c3.979,0.282,8.104-0.462,12.063-0.736
+  c1.281-0.089,2.228-0.173,3.254-1.11c1.337-1.221,1.546-3.482,1.736-5.207c0.467-4.244,0.48-9.552-0.286-13.798
+  c-1.165-6.46-5.803-12.447-9.944-17.302c-1.563,0.518-1.872,4.577-2.214,5.959c-0.773,3.121-1.154,6.479-1.242,9.694
+  c-0.072,2.642,0.069,5.292,0.039,7.935c-0.05,4.323-0.759,8.573-0.757,12.935c0.002,3.859,0.372,7.758,0.651,11.6
+  c0.191,2.63,0.289,6.028,1.091,8.466c-1.581-3.11-2.453-6.692-2.462-10.178c-1.844,0.729-3.462,2.162-5.381,2.917
+  c-2.797,1.1-5.896,2.002-8.853,2.515c1.971-3.073,9.125-3.964,12.596-3.789c1.913,0.097,4.072,0.69,5.843,1.423
+  c1.898,0.786,3.563,2.396,5.245,3.583c0.932,0.658,2.371,1.966,3.501,1.981" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="2" stroke="#000000" fill="none"/>
+  <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M99.847,33.099c0.808,1.522-1.56,5.297-2.445,6.398
+    c-4.805,5.972-12.044,8.017-18.268,11.939c0.447-4.078,2.458-7.993,2.375-12.295c-0.038-1.948-0.484-3.898-1.127-5.743
+    c0.971-0.101,1.592,1.188,2.116,1.87c1.726,2.248,3.335,4.614,4.948,6.943c2.732,3.947,4.667,8.169,5.561,12.869
+    c0.888,4.67,1.504,11.033-0.432,15.517c-0.329,0.762-0.518,2.112-1.411,2.414c-1.023,0.346-4.267-2.311-5.08-2.77
+    c-0.939-0.53-4.313-1.767-4.755-2.968c-1.049-2.854,4.522-5.433,6.274-6.207c3.488-1.544,7.112-3.328,10.785-4.351
+    c0.04-2.327-0.938-5.776,0.882-7.653c0.396,1.181,0.234,3.144,0.011,4.39c-0.258,1.434-1.339,2.618-1.591,3.876
+    c-0.37-1.412,0.359-2.969,0.816-4.229c1.063-2.93,2.389-5.783,3.62-8.645c0.83-1.929,1.438-3.984,1.853-6.057
+    c0.958-4.795,0.528-10.027,0.528-14.902c0,3.196-0.033,6.301-0.41,9.481c-1.146,9.659-5.72,18.642-7.166,28.217
+    c-0.751,4.972-1.066,9.787-2.281,14.706c-0.77,3.115-2.215,6.188-2.673,9.363c-0.274-3.4,1.283-6.976,2.445-10.075
+    c1.823-4.866,3.702-9.943,6.014-14.597c1.663-3.348,3.401-6.354,4.76-9.846c0.695-1.787,1.636-3.483,2.451-5.216
+    c0.595-1.265,1.09-2.332,2.331-3.111c2.266-1.423,5.106-0.885,7.439-1.76c-0.269,1.417-1.815,2.755-2.736,3.773
+    c-2.309,2.553-4.393,5.287-6.593,7.932c-1.195,1.438-2.526,3.092-3.251,4.839c-0.569,1.371-1.072,4.523-0.468,5.891
+    c1.585,3.585,4.172-4.466,4.63-5.635c1.687-4.302,3.725-7.609,8.508-8.54c2.398-0.467,5.087-0.696,6.937,1.329
+    c0.616,0.675,1.171,2.361,0.714,3.273c-1.375,2.742-4.589-1.647-5.385-2.657c-1.595-2.023-2.88-4.022-3.72-6.464
+    c-0.21-0.61-0.225-1.058-0.56-1.608c-0.906,2.021-0.729,5.068-0.906,7.319c-0.328,4.175-0.636,8.415-0.617,12.601
+    c0.011,2.532,0.05,5.013,0.261,7.509c0.24,2.827,1.491,7.372-0.553,9.895" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="2" stroke="#000000" fill="none"/>
+  <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M136.526,54.205c0.12-0.219,2.091-1.296,2.499-1.591
+    c2.869-2.066,6.349-4.407,8.822-6.909c1.726-1.746,2.451-4.056,3.613-6.131c1.18-2.105,2.39-5.663,0.771-7.929
+    c-1.076,0.55-1.532,2.393-2,3.492c-1.909,4.492-3.486,8.943-5.078,13.549c-2.109,6.103-5.073,12.021-6.644,18.305
+    c-1.108-3.474,2.892-8.957,5.173-11.202c2.178-2.141,4.575-4.251,7.571-5.04c0.629,2.627-0.968,6.411,0.749,8.681
+    c2.962,3.918,10.565,3.685,14.868,3.838c0.191-1.42,0.541-3.368-0.005-4.776c-0.384-0.991-1.41-2.032-2.065-2.839
+    c-0.701-0.863-1.379-2.164-2.157-2.923c-0.362-0.353-0.393-0.688-0.944-0.821c-1.093-0.263-3.077,2.639-3.533,3.136
+    c-1.461,1.592-3.025,3.077-4.455,4.698c-2.813,3.191-5.04,6.751-7.452,10.229c-1.306-2.936,1.278-7.924,2.569-10.6
+    c1.624-3.369,3.077-6.725,3.996-10.364c0.563-2.229,1.555-4.566,1.604-6.855c0.042-1.924,0.034-3.86,0.007-5.784
+    c-0.014-0.932,0.236-1.965-0.563-2.631c1.66,1.503,2.999,4.66,5.214,5.474" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="2" stroke="#000000" fill="none"/>
+  </g>
+</g>
+</svg>
+
+</div>
+<div id="divdown1"></div>
+<section id="lovein">
+    <div id="container_buttons">
+    	<input type="text" placeholder="输入口令" id="kl"/>
+        <p>
+            <a class="a_demo_five" href="javascript:void(0)">
+                Love this open!
+            </a>
+        </p>
+        <!-- <div class="heart" id="like3" rel="like"></div> -->
+    </div>
+</section>
+
+<script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+<script language="javascript" type="text/javascript"> 
+/*var interval = 1000; 
+function ShowCountDown(year,month,day,divname) 
+{ 
+var now = new Date(); 
+var endDate = new Date(year, month-1, day); 
+var leftTime=endDate.getTime()-now.getTime(); 
+var leftsecond = parseInt(leftTime/1000); 
+console.log(leftsecond);
+if(leftsecond < "0"){
+
+	document.getElementById("lovein").className = "";
+	document.getElementById("lovein").getElementsByTagName("a")[0].setAttribute("href","index2.html");
+}
+//var day1=parseInt(leftsecond/(24*60*60*6)); 
+var day1=Math.floor(leftsecond/(60*60*24)); 
+var hour=Math.floor((leftsecond-day1*24*60*60)/3600); 
+var minute=Math.floor((leftsecond-day1*24*60*60-hour*3600)/60); 
+var second=Math.floor(leftsecond-day1*24*60*60-hour*3600-minute*60); 
+var cc = document.getElementById(divname); 
+cc.innerHTML = hour+":"+minute+":"+second; 
+} 
+window.setInterval(function(){ShowCountDown(2016,4,7,'divdown1');}, interval); */
+
+$(".a_demo_five").on("click",function(){
+	var sl = $("#kl").val();
+	switch(sl){
+		case '0301':
+			location.href="index2.html";
+		break;
+		case '我爱你':
+			location.href="index1.html";
+		break;
+		default:
+			alert("这都猜不中 好意思吗！");
+		break;
+	}
+});
+</script> 
+</body> 
+</html> 

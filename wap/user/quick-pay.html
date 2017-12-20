@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="renderer" content="webkit">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="format-detection" content="telephone=no" />
+<title>快捷买单</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" href="static/css/my.css" />
+</head>
+<body style="background:#fff;">
+<header>
+	<a href="javascript:history.go(-1);" class="headcha"><i class="icon-back">返回</i></a>
+	<h1>快捷买单</h1>
+</header>
+<div class="quickpay">
+	<dl>
+		<dt>手&ensp;机&ensp;号:</dt>
+		<dd><input type="number" /></dd>
+	</dl>
+	<dl>
+		<dt>订单总额:</dt>
+		<dd><input type="number" /></dd>
+	</dl>
+	<p>优惠券<a href="choose-yhj.html">请选择</a></p>
+	<p class="paynum">还需支付:<span>￥480.00</span></p>
+	<button>推送会员买单</button>
+</div>
+<script src="static/js/zepto.min.js"></script>
+<script src="static/js/tipbox.js"></script>
+<script>
+	$("button").on("tap",function(){
+		new TipBox({str:'该手机号尚未注册，暂不支持快捷买单',setTime:'1500'});
+	});
+</script>
+</body></html>

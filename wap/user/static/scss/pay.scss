@@ -1,0 +1,132 @@
+@import 'base';
+
+.linepay{
+	background:$divBgColor;
+	font-size:#{14/$htmlfsize}rem;
+	color:$fontColor;
+	li{
+		border-bottom:1px solid $bgColor;
+		padding:#{30/2/$htmlfsize}rem;
+		span{float:right;}
+		p{
+			background:$bgColor;
+			padding:#{20/2/$htmlfsize}rem;
+			line-height:#{20/$htmlfsize}rem;
+			margin-top:#{5/$htmlfsize}rem;
+		}
+	}
+	.total{
+		text-align:right;
+		line-height:#{50/$htmlfsize}rem;
+		padding-right:#{30/2/$htmlfsize}rem;
+		span{
+			color:$defaultBgColor;
+		}
+	}
+}
+
+.pay{
+	button{
+		position:fixed;
+		bottom:0;
+		left:0;
+		background:$defaultBgColor;
+		color:#fff;
+		font-size:14px;
+		width:100%;
+		line-height:#{50/$htmlfsize}rem;
+		outline:none;
+		border:none;
+	}
+	h3{
+		font-size:#{28/2/$htmlfsize}rem;
+		line-height:#{84/2/$htmlfsize}rem;
+		text-indent:#{40/2/$htmlfsize}rem;
+		span{
+			color:$defaultBgColor;
+		}
+	}
+	label{
+		display:block;
+		padding:10px #{40/2/$htmlfsize}rem;
+		background:#fff;
+		border-bottom:1px solid #eee;
+		position:relative;
+		line-height:20px;
+		i{
+			background:url(../img/pay.png) no-repeat 0 -50px;
+			background-size:(70px/2);
+			width:#{58/2/$htmlfsize}rem;
+			height:#{58/2/$htmlfsize}rem;
+			display:inline-block;
+			margin-right:10px;
+			margin-top:5px;
+			&.alipay{
+				background-position: 0 -22px;
+			}
+			&.yinlian{
+				background-position:0 0;
+				width:#{70/2/$htmlfsize}rem;
+				height:#{45/2/$htmlfsize}rem;
+			}
+		}
+		div{
+			display:inline-block;
+			vertical-align:top;
+			h4{
+				font-size:#{28/2/$htmlfsize}rem;
+			}
+			p{
+				color:#bebebe;
+			}
+		}
+		input[type='radio']{
+			position:relative;
+			float:right;
+			vertical-align:super;
+	  		width:23px;
+	  		height:23px;
+	  		margin-top:7px;
+	  		padding: 0px;
+	  		border:1px solid #ddd;
+	  		appearance: none;
+	  		-webkit-appearance: none;
+	  		-o-appearance: none;
+	  		-moz-appearance: none;
+	  		-ms-appearance: none;
+	  		border-radius:100%;
+	  		outline:none;
+	  		background-color: transparent;
+	  		transition: box-shadow 0.2s, border 0.2s, background-color 0.2s;
+	  		-moz-transition: box-shadow 0.2s, border 0.2s, background-color 0.2s;
+	  		-webkit-transition: box-shadow 0.2s, border 0.2s, background-color 0.2s;
+	  		-o-transition: box-shadow 0.2s, border 0.2s, background-color 0.2s;
+	  		&:checked{	
+			  	text-align: center;
+			  	overflow: hidden;
+			  	border-color:$defaultBgColor;
+			  	background-color:$defaultBgColor;
+			  	&::before {
+				  	position: relative;
+				  	display: inline-block;
+				  	background:url(../img/check.png) no-repeat;
+				  	background-size:14px;
+				  	width:14px;
+				  	height:10px;
+				  	margin-top:5px;
+				  	content: "";
+				}/* 
+				&::after {
+				  	position: relative;
+				  	display: inline-block;
+				  	color:#fff;
+				  	top:-10px;
+				    				left:0px;
+				  	transform: rotate(45deg);
+				  	font-size: 22px;
+				  	content: "|";
+				} */
+	  		}
+		}
+	}
+}

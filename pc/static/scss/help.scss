@@ -1,0 +1,59 @@
+@import 'base';
+
+.help{
+	width:$divWidth;
+	margin:0 auto;
+	.crumbs{
+		@extend %crumbs;
+	}
+}
+
+.helpmain{
+	@extend %of;
+	.help-left{
+		float:left;
+		width:245px;
+		border:1px solid $borderColor;
+		border-width:0 0 1px 1px;
+		li{
+			width:100%;
+			border:1px solid $borderColor;
+			height:50px;
+			line-height:50px;
+			font-size:16px;
+			text-align:center;
+			border-width:1px 1px 0 0;
+			&:first-child{
+				font:20px/75px 'Microsoft YaHei';
+				height:75px;
+				background:$bgColor;
+			}
+		}
+	}
+	.help-right{
+		float:right;
+		width:930px;
+		font-size:16px;
+		line-height:30px;
+		pre{
+			@extend %huanhan;
+		}
+		h3{
+			color:#333;
+			font:20px/40px 'Microsoft YaHei';
+			border-bottom:1px solid $borderColor;
+		}
+		.help-c{
+			text-align:center;
+			padding:35px 0;
+		}
+		.p{
+			padding:30px 65px 0;
+		}
+		.map{
+			width:860px;
+			height:380px;
+			margin-top:30px;
+		}
+	}
+}

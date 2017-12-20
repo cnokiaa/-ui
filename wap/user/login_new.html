@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="renderer" content="webkit">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="format-detection" content="telephone=no" />
+<title>注册</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" href="static/css/login.css" />
+</head>
+<body style="background:#f22641">
+<div class="login_new">
+	<div class="bg">
+		<i class="dengguang dengguang1"></i>
+		<i class="dengguang dengguang2"></i>
+		<i class="hongbao0 hongbao"></i>
+		<i class="hongbao1 hongbao"></i>
+		<i class="hongbao2 hongbao"></i>
+		<i class="hongbao3 hongbao"></i>
+		<i class="hongbao4 hongbao"></i>
+		<i class="hongbao5 hongbao"></i>
+		<i class="title"></i>
+	</div>
+	<i class="wuding">
+		<img src="static/img/sc4.png" alt="">
+	</i>
+
+	<div class="login_f">
+		<div class="login_fm">
+		<p><input type="number" maxlength="11" class="phonenum" placeholder="请输入手机号" /></p>
+		<p><input type="number" class="vcode" placeholder="请输入验证码" /><button class="getvcode disabled" disabled="true">获取验证码</button></p>
+		<button type="submit" class="loginbt">领取体验券</button>
+		</div>
+	</div>
+</div>
+<script src="static/js/zepto.min.js"></script>
+<script src="static/js/tipbox.js"></script>
+<script>
+function testnum(){
+	var telReg = !!$(".phonenum").val().match(/^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/);
+	if(telReg){
+		$(".getvcode").removeClass("disabled").removeAttr("disabled");
+		return true;
+	} else {
+		$(".getvcode").addClass("disabled").attr("disabled",true);
+		return false;
+	}
+}
+$(".phonenum").on("keyup",function(){
+	testnum();
+});
+var wait = 60;
+function time(o) {
+	if (wait == 0) {
+		o.removeAttribute("disabled");
+		$(o).removeClass("disabled").html("重新获取");
+		wait = 60;
+	} else {
+		o.setAttribute("disabled", true);
+		$(o).addClass("disabled").html("重新获取"+wait+"s");
+		wait--;
+		setTimeout(function() {
+			time(o)
+		}, 1000)
+	}
+}
+$(".getvcode").on("tap",function(){
+	if($(this).hasClass("disabled")){
+		return false;
+	} else {
+		$(this).addClass("disabled").attr("disabled",true);
+		time(this);		
+	}
+});
+$(".loginbt").on("tap",function(){
+	if($(".phonenum").val() == ""){
+		new TipBox({str:'手机号不能为空！',setTime:'1500'});
+	} else if(!testnum()){
+		new TipBox({str:'手机格式错误！',setTime:'1500'});
+	} else if($(".vcode").val() == ""){
+		new TipBox({str:'验证码不能为空！',setTime:'1500'});
+	} else {
+		new TipBox({str:'领取成功！',setTime:'1500'});
+		setTimeout(function(){
+			location.href="down.html";
+		},2000);
+		return false;
+	}
+});
+</script>
+</body></html>

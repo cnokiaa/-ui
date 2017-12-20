@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="renderer" content="webkit">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="format-detection" content="telephone=no" />
+<title></title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" href="static/css/message.css" />
+</head>
+<body>
+<header>
+	<a href="javascript:history.go(-1);" class="headcha"><i class="icon-back">返回</i></a>
+	<h1>系统消息</h1>
+	<a href="" class="headerright">一键已读</a>
+</header>
+<div class="messagemain">
+	<ul>
+		<li class="read">
+			<h3>订单号155614448889预订成功 <span>08.18 18:00</span></h3>
+			<div>
+				您预订的桃园新酒店，消费时间8.18 19：00的订单预订成功，请届时准时到店，谢谢！
+			</div>
+		</li>
+		<li>
+			<h3>订单号155614448889预订成功 <span>08.18 18:00</span></h3>
+			<div>
+				您预订的桃园新酒店，消费时间8.18 19：00的订单预订成功，请届时准时到店，谢谢！
+			</div>
+		</li>
+		<li>
+			<h3>订单号155614448889预订成功 <span>08.18 18:00</span></h3>
+			<div>
+				您预订的桃园新酒店，消费时间8.18 19：00的订单预订成功，请届时准时到店，谢谢！
+			</div>
+		</li>
+	</ul>
+</div>
+<script src="static/js/zepto.min.js"></script>
+<script>
+$(".messagemain li").on("tap",function(){
+	$(this).addClass("active").siblings().removeClass("active");
+});
+</script>
+</body></html>

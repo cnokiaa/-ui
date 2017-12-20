@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="renderer" content="webkit">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="format-detection" content="telephone=no" />
+<title>自主点菜</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" href="static/css/book.css" />
+</head>
+<body>
+<header>
+	<a href="javascript:history.go(-1);" class="headcha"><i class="icon-back">返回</i></a>
+	<h1>自主点菜</h1>
+</header>
+<div class="main">
+	<div id="orderleft">
+		<ul class="orderlul">
+			<li class="current">菜系1</li>
+			<li>菜系2</li>
+			<li>菜系3</li><li>菜系4</li><li>菜系2</li><!-- <li>菜系2</li><li>菜系2</li><li>菜系2</li>
+			<li>菜系2</li><li>菜系2</li><li>菜系2</li><li>菜系2</li><li>菜系2</li><li>菜系2</li><li>菜系2</li>
+			<li>菜系2</li><li>菜系2</li><li>菜系2</li><li>菜系2</li>  -->
+		</ul>
+	</div>
+	<div id="orderright"><div>
+		<input type="hidden" id="cartdata" />
+		<ul class="orderrul">
+			<li class="h3">菜系1</li>
+			<li class="orderrli sale" data-id="001"><!--id为该菜的唯一id-->
+				<div class="omainleft"><img src="http://p1.meituan.net/200.0/deal/32855f62d21ca88189ddfbb1848a1d3c40235.jpg" alt=""></div>
+				<div class="omainright">
+					<h4>獾囊按尴尬卡啊开房间阿克苏的就是看到</h4>
+					<p class="price">￥5.10</p>
+					<p class="oprice">￥50.00</p>
+					<div class="orderadd">
+						<button class="plus"></button>
+						<span class="count"><span></span></span>
+						<button class="minus"></button>
+					</div>
+				</div>		
+			</li>
+		</ul>
+		<ul class="orderrul">
+			<li class="h3">菜系2</li>
+			<li class="orderrli" data-id="002">
+				<div class="omainleft"><img src="http://p1.meituan.net/200.0/deal/32855f62d21ca88189ddfbb1848a1d3c40235.jpg" alt=""></div>
+				<div class="omainright">
+					<h4>獾囊按尴尬卡啊开房间阿克苏的就是看到</h4>
+					<p class="price">￥2.02</p>
+					<p class="oprice">￥50.00</p>
+					<div class="orderadd">
+						<button class="plus"></button>
+						<span class="count"><span></span></span>
+						<button class="minus"></button>
+					</div>
+				</div>
+			</li>
+			<li class="orderrli" data-id="003">
+				<div class="omainleft"><img src="http://p1.meituan.net/200.0/deal/32855f62d21ca88189ddfbb1848a1d3c40235.jpg" alt=""></div>
+				<div class="omainright">
+					<h4>獾囊按尴尬卡啊开房间阿克苏的就是看到</h4>
+					<p class="price">￥0.00</p>
+					<p class="oprice">￥50.00</p>
+					<div class="orderadd">
+						<button class="plus"></button>
+						<span class="count"><span></span></span>
+						<button class="minus"></button>
+					</div>
+				</div>
+			</li>
+			<li class="orderrli" data-id="004">
+				<div class="omainleft"><img src="http://p1.meituan.net/200.0/deal/32855f62d21ca88189ddfbb1848a1d3c40235.jpg" alt=""></div>
+				<div class="omainright">
+					<h4>獾囊按尴尬卡啊开房间阿克苏的就是看到</h4>
+					<p class="price">￥1.00</p>
+					<p class="oprice">￥50.00</p>
+					<div class="orderadd">
+						<button class="plus"></button>
+						<span class="count"><span></span></span>
+						<button class="minus"></button>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<ul class="orderrul">
+			<li class="h3">菜系3</li>
+			<li class="orderrli" data-id="005">
+				<div class="omainleft"><img src="http://p1.meituan.net/200.0/deal/32855f62d21ca88189ddfbb1848a1d3c40235.jpg" alt=""></div>
+				<div class="omainright">
+					<h4>獾囊按尴尬卡啊开房间阿克苏的就是看到</h4>
+					<p class="price">￥3.00</p>
+					<p class="oprice">￥50.00</p>
+					<div class="orderadd">
+						<button class="plus"></button>
+						<span class="count"><span></span></span>
+						<button class="minus"></button>
+					</div>
+				</div>
+			</li>
+			<li class="orderrli" data-id="006">
+				<div class="omainleft"><img src="http://p1.meituan.net/200.0/deal/32855f62d21ca88189ddfbb1848a1d3c40235.jpg" alt=""></div>
+				<div class="omainright">
+					<h4>獾囊按尴尬卡啊开房间阿克苏的就是看到</h4>
+					<p class="price">￥25.00</p>
+					<p class="oprice">￥50.00</p>
+					<div class="orderadd">
+						<button class="plus"></button>
+						<span class="count"><span></span></span>
+						<button class="minus"></button>
+					</div>
+				</div>
+			</li>
+			<li class="orderrli" data-id="007">
+				<div class="omainleft"><img src="http://p1.meituan.net/200.0/deal/32855f62d21ca88189ddfbb1848a1d3c40235.jpg" alt=""></div>
+				<div class="omainright">
+					<h4>2222</h4>
+					<p class="price">￥25.00</p>
+					<p class="oprice">￥50.00</p>
+					<div class="orderadd">
+						<button class="plus"></button>
+						<span class="count"><span></span></span>
+						<button class="minus"></button>
+					</div>
+				</div>
+			</li>
+			<li class="orderrli" data-id="008">
+				<div class="omainleft"><img src="http://p1.meituan.net/200.0/deal/32855f62d21ca88189ddfbb1848a1d3c40235.jpg" alt=""></div>
+				<div class="omainright">
+					<h4>2222</h4>
+					<p class="price">￥25.00</p>
+					<p class="oprice">￥50.00</p>
+					<div class="orderadd">
+						<button class="plus"></button>
+						<span class="count"><span></span></span>
+						<button class="minus"></button>
+					</div>
+				</div>
+			</li>
+			<li class="orderrli" data-id="009">
+				<div class="omainleft"><img src="http://p1.meituan.net/200.0/deal/32855f62d21ca88189ddfbb1848a1d3c40235.jpg" alt=""></div>
+				<div class="omainright">
+					<h4>2222</h4>
+					<p class="price">￥25.00</p>
+					<p class="oprice">￥50.00</p>
+					<div class="orderadd">
+						<button class="plus"></button>
+						<span class="count"><span></span></span>
+						<button class="minus"></button>
+					</div>
+				</div>
+			</li>
+			<li class="orderrli" data-id="010">
+				<div class="omainleft"><img src="http://p1.meituan.net/200.0/deal/32855f62d21ca88189ddfbb1848a1d3c40235.jpg" alt=""></div>
+				<div class="omainright">
+					<h4>2222</h4>
+					<p class="price">￥25.00</p>
+					<p class="oprice">￥50.00</p>
+					<div class="orderadd">
+						<button class="plus"></button>
+						<span class="count"><span></span></span>
+						<button class="minus"></button>
+					</div>
+				</div>
+			</li>
+		</ul></div>
+	</div>
+</div>
+<div class="cart">
+	<div class="cartmain">
+		<h3>购物车<a>清空全部</a></h3>
+		<ul>
+		</ul>
+	</div>
+	<div class="cart-tip">
+		<i></i>
+		<span class="cart-total"></span>
+	</div>
+	<button class="submitbt">选好了</button>
+</div>
+<div class="mask"></div>
+<script src="static/js/zepto.min.js"></script>
+<script src="static/js/iscroll.js"></script>
+<script src="static/js/tipbox.js"></script>
+<script>
+$(document).ready(function(){
+var oheight = document.documentElement.clientHeight - $("header").height() - $(".cart").height();
+$(".main,#orderleft,#orderright").css("height",oheight);
+var myscroll=new iScroll("orderleft",{snap:'li'});
+var myscroll2=new iScroll("orderright",{
+	checkDOMChanges:true,
+	snap:'li',
+	onScrollEnd:function(){
+		var oul = document.getElementById("orderright").getElementsByTagName("ul");
+		for(var i=0;i<oul.length;i++){
+			if(oul[i].offsetTop == -(this.y) || oul[i].offsetTop < -(this.y)){
+				$("#orderleft li").eq(i).addClass("current").siblings("li").removeClass("current");
+				myscroll.scrollToElement($("#orderleft li")[i]);
+			}
+		}
+		
+	}
+});
+
+$("#orderleft li").on("click",function(){
+	$(this).addClass("current").siblings("li").removeClass("current");
+	var $mindex = $(this).index(),uls = document.getElementById("orderright").getElementsByTagName("ul")[$mindex];
+	var m2 = new iScroll("orderright",{});
+	m2.scrollToElement(uls);
+});
+});
+
+var n="0",fcode = "",anum = "0";
+$(".main,.cart").delegate("button","tap",function(e){
+	var e = e || window.event;
+    var el = e.target || e.srcElement;
+    var cls = el.className;
+    snum(this,cls);
+});
+function snum(a,b,c){
+	var a = $(a),
+	$cart = $(".cartmain"),
+	$li = a.parents("li"),
+	n = $li.find(".count span").html(),
+	iname = $li.find("h4").html(),
+	iid = $li.attr("data-id"),
+	iprice = $li.find(".price").html();
+	var ihtml = "";
+	ihtml +='<li data-id='+iid+'><span class="item-name">'+iname+'</span><span class="price">'+iprice+'</span>';
+	switch (b) {
+	    case 'plus':
+	        n++;
+	        anum++;
+	        if(!a.parent().hasClass("showall")){
+				a.parent().addClass("showall");
+			}
+	        if(n == 1){
+				ihtml +='<div class="orderadd showall"><button class="plus"></button><span class="count"><span>'+n+'</span></span><button class="minus"></button></div></li>';
+	        	$(".cartmain ul").prepend(ihtml);
+	        }
+	        break;
+	    case 'minus':
+	        n--;anum --;
+	        if(n<0 || n==0){
+	        	$(".cart li[data-id='"+iid+"']").remove();
+	        	$("li[data-id='"+iid+"']").find(".orderadd").removeClass("showall");
+	        	n = 0;
+	        }
+	        break;
+	    case 'submitbt':
+	    	if($(".cart-total").html().split("￥")[1] == undefined || $(".cart-total").html().split("￥")[1] < 500){
+	    		new TipBox({str:'订单总额不足500元，请选择到店点菜',setTime:'1500'});
+	    		return false;
+	    	}
+	    	ddbtn();
+	    	break;
+    }
+    $("li[data-id='"+iid+"']").find(".count span").html(n);
+    itemn();		
+}
+function itemn(){
+	var sum = 0,sumnun = 0;
+	$(".cartmain li").each(function(){
+		sumnun += Number($(this).find(".count span").html());
+		sum += $(this).find(".price").html().split("￥")[1] * $(this).find(".count span").html();
+	});
+	$(".cart-tip i").show().html(sumnun);
+	$(".cart-total").html("￥"+sum.toFixed(2));
+}
+function ddbtn(){
+	var r,istring = {},$a = {items:[]};
+	$(".cart li").each(function(){
+		a = $(this).find(".item-name").html();
+		b = $(this).attr("data-id");
+		c = $(this).find(".price").html();
+		d = $(this).find(".count span").html();
+		var istring = {name:a,id:b,price:c,input:d};
+	    $a.items.unshift(istring);
+		r = JSON.stringify($a);
+	});
+	alert(r);
+}
+$(".cart-tip").on("tap",function(){
+	if($(this).hasClass("active")){
+		$(".cartmain,.mask").hide();
+		$(this).removeClass("active");
+	} else {
+		$(".cartmain,.mask").show();
+		$(this).addClass("active");
+	}
+});
+$(".mask").on("tap",function(){
+	$(".cartmain,.mask").hide();
+	$(".cart-tip").removeClass("active");
+});
+</script>
+</body></html>

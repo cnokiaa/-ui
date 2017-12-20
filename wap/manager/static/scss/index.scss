@@ -1,0 +1,150 @@
+@import 'base';
+.indexmain{
+	background:#fff;
+	border:1px solid #e5e5e5;
+	border-width:1px 0;
+	padding:0 10px;
+	ul{
+		margin-top:-1px;
+	}
+	li{
+		position:relative;
+		padding:15px 0 20px 55px;
+		border-top:1px solid #e5e5e5;
+		height:44px;
+		line-height:24px;
+		h5{
+			font-size:14px;
+			color:#333;
+			font-weight: normal;
+		}
+		&:before{
+			content:'';
+			position:absolute;
+			left:0;
+			top:15px;
+			width:44px;
+			height:44px;
+			background:url(../images/index.png) no-repeat 0 -88px;
+		}
+		&.hypj:before{
+			background-position:0 -44px;
+		}
+		&.bxjl:before{
+			background-position:0 0;
+		}
+		&:after{
+			content:'';
+			position:absolute;
+			right:10px;
+			top:30px;
+			width: 10px;
+		    height: 10px;
+		    border-right:2px solid #bebebe;
+		    border-bottom:2px solid #bebebe;
+		    -moz-transform:rotate(-45deg);
+		    -o-transform:rotate(-45deg);
+		    -webkit-transform: rotate(-45deg);
+		    -ms-transform: rotate(-45deg);
+		    transform: rotate(-45deg);
+		}
+		.pj{
+			display: -webkit-box;
+	        display: -moz-box;
+	        display: -ms-flexbox;
+	        display: flex;
+	        text-align:left;
+	        span{
+	        	-webkit-box-flex: 1;
+	            -moz-box-flex: 1;
+	            -webkit-flex: 1;
+	            -ms-flex: 1;
+	            flex: 1;
+	            display:block;
+	            position:relative;
+	        }
+		}
+	}
+}
+.changepw{
+	font-size:14px;
+	color:#0033ff;
+	padding:15px 10px;
+	background:#fff;
+	text-align:right;
+	display:block;
+}
+
+.login{
+	width:90%;
+	margin:0 auto;
+	text-align:center;
+	font-size:14px;
+	i{
+		background:url(../images/logo.png) no-repeat center center;
+		width:80px;
+		height:80px;
+		display:inline-block;
+		padding:60px 0 50px;
+	}
+	dl{
+		position:relative;
+		text-align:left;
+		margin-bottom:20px;
+		line-height:30px;
+		&:after{
+			content: ".";
+		    display: block;
+		    height: 0;
+		    clear: both;
+		    visibility: hidden;
+		}
+		dt{
+			float:left;
+		}
+		dd{
+			float:right;
+			position:relative;
+			width:80%;
+			input{
+				border:1px solid #e5e5e5;
+				line-height:30px;
+				width:99%;
+				text-indent:10px;
+				&.vcode{
+					width:55%;
+				}
+			}
+			button{
+				background:$defaultBgColor;
+				font-size:14px;
+				border:none;
+				color:#fff;
+				line-height:32px;
+				width:40%;
+				position:absolute;
+				right:0;
+				top:0;
+				&.disabled{
+					background:#666;
+				}
+			}
+		}
+	}
+	.submitbt{
+		margin-top:10px;
+		background:$defaultBgColor;
+		color:#fff;
+		width:100%;
+		border-radius:5px;
+		border:none;
+		line-height:37px;
+		height:36px;
+		font-size:14px;
+	}
+	.findpw{
+		float:right;
+		color:$blue;
+		margin-top:15px;
+	}
+}

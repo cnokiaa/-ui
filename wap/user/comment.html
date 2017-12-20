@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="renderer" content="webkit">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="format-detection" content="telephone=no" />
+<title></title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" href="static/css/order.css" />
+</head>
+<body>
+<header>
+	<a href="javascript:history.go(-1);" class="headcha"><i class="icon-back">返回</i></a>
+	<h1>我的点评</h1>
+</header>
+<div class="album">
+<div id="albummenu">
+	<ul class="albummenul">
+		<li class="current">已点评</li>
+		<li>未点评</li>
+	</ul>
+</div>
+<div id="albummain" class="ordermain">
+<div class="albumm">
+	<ul class="collbus">
+		<li>
+			<h3>订单号：225646658998 <span>08-08  16:00</span></h3>
+			<div class="orderli">
+			<dl>
+				<dt>商&#8197;&#8197;家&#8197;&#8197;名:</dt>
+				<dd>黄焖鸡餐厅</dd>
+			</dl>
+			<dl>
+				<dt>打&emsp;&emsp;&#8197;分:</dt>
+				<dd><b>环境5.0</b><b>服务5.0</b><b>口味5.0</b></dd>
+			</dl>
+			<dl>
+				<dt>评&emsp;&emsp;&#8197;语:</dt>
+				<dd>环境很好，服务很好，口味很好，老板人很好。</dd>
+			</dl>
+			</div>
+		</li>
+		<li>
+			<h3>订单号：225646658998 <span>08-08  16:00</span></h3>
+			<div class="orderli">
+			<dl>
+				<dt>商&#8197;&#8197;家&#8197;&#8197;名:</dt>
+				<dd>黄焖鸡餐厅</dd>
+			</dl>
+			<dl>
+				<dt>打&emsp;&emsp;&#8197;分:</dt>
+				<dd><b>环境5.0</b><b>服务5.0</b><b>口味5.0</b></dd>
+			</dl>
+			<dl>
+				<dt>评&emsp;&emsp;&#8197;语:</dt>
+				<dd>环境很好，服务很好，口味很好，老板人很好。</dd>
+			</dl>
+			</div>
+		</li>
+	</ul>
+	<ul class="collbus">
+		<li>
+			<h3>订单号：225646658998 <span>08-08  16:00</span></h3>
+			<div class="orderli">
+			<a href="clear-list.html">
+			<dl>
+				<dt>商&#8197;&#8197;家&#8197;&#8197;名:</dt>
+				<dd>黄焖鸡餐厅</dd>
+			</dl>
+			<dl>
+				<dt>预&#8197;&#8197;订&#8197;&#8197;人:</dt>
+				<dd>招财猫 13554878787</dd>
+			</dl>
+			<dl>
+				<dt>用餐人数:</dt>
+				<dd>10人</dd>
+			</dl>
+			<dl>
+				<dt>用餐时间:</dt>
+				<dd>08-18 19:00</dd>
+			</dl>
+			<dl>
+				<dt>订单总额:</dt>
+				<dd>50.00元</dd>
+			</dl>
+			<dl>
+				<dt>订单状态:</dt>
+				<dd>已消费</dd>
+			</dl></a>
+			</div>
+			<div class="editorder">
+				<a href="comment-detail.html">评价</a>
+			</div>
+		</li>
+		<li>
+			<h3>订单号：225646658998 <span>08-08  16:00</span></h3>
+			<div class="orderli">
+			<a href="clear-list.html">
+			<dl>
+				<dt>商&#8197;&#8197;家&#8197;&#8197;名:</dt>
+				<dd>黄焖鸡餐厅</dd>
+			</dl>
+			<dl>
+				<dt>预&#8197;&#8197;订&#8197;&#8197;人:</dt>
+				<dd>招财猫 13554878787</dd>
+			</dl>
+			<dl>
+				<dt>用餐人数:</dt>
+				<dd>10人</dd>
+			</dl>
+			<dl>
+				<dt>用餐时间:</dt>
+				<dd>08-18 19:00</dd>
+			</dl>
+			<dl>
+				<dt>订单总额:</dt>
+				<dd>50.00元</dd>
+			</dl>
+			<dl>
+				<dt>订&emsp;&emsp;&#8197;金:</dt>
+				<dd>50.00元(已退款)</dd>
+			</dl>
+			<dl>
+				<dt>订单状态:</dt>
+				<dd>预订失败</dd>
+			</dl>
+			<dl>
+				<dt>失败原因:</dt>
+				<dd>房间已满</dd>
+			</dl></a>
+			</div>
+			<div class="editorder">
+				<a href="comment-detail.html">评价</a>
+			</div>
+		</li>
+	</ul>
+</div></div></div>
+<script src="static/js/zepto.min.js"></script>
+<script src="static/js/swiper.jquery.min.js"></script>
+<script>
+var mySwiper2 = new Swiper('#albummenu',{
+	wrapperClass:'albummenul',
+	slideClass:'albummenul li',
+	watchSlidesProgress : true,
+	watchSlidesVisibility : true,
+	slidesPerView :5,
+	onTap:function(){mySwiper3.slideTo(mySwiper2.clickedIndex);}
+});
+var mySwiper3 = new Swiper('#albummain',{
+	wrapperClass:'albumm',
+	slideClass:'albumm ul',
+	onSlideChangeStart:function(){updateNavPosition();}
+});
+function updateNavPosition(){
+	$('#albummenu li').removeClass('current');
+	var activeNav = $('#albummenu li').eq(mySwiper3.activeIndex).addClass('current');
+	if (!activeNav.hasClass('swiper-slide-visible')) {
+		if (activeNav.index()>mySwiper2.activeIndex) {
+			var thumbsPerNav = Math.floor(mySwiper2.width/activeNav.width())-1;
+			mySwiper2.slideTo(activeNav.index()-thumbsPerNav);
+		}
+		else {
+			mySwiper2.slideTo(activeNav.index());
+		}	
+	}
+}
+
+	mySwiper2.slideTo(1);
+	mySwiper3.slideTo(1);
+
+</script>
+</body></html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="renderer" content="webkit">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="format-detection" content="telephone=no" />
+<title>会员资料</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" href="static/css/my.css" />
+</head>
+<body>
+<header>
+	<a href="javascript:history.go(-1);" class="headcha"><i class="icon-back">返回</i></a>
+	<h1>会员资料</h1>
+	<a href="" class="complete">完成</a>
+</header>
+<div class="mydata" style="margin-top:0">
+	<dl style="height:75px;line-height:75px;">
+		<dt>头像</dt>
+		<dd><img src="static/img/default.jpg" class="tt"/>
+			<input type="file" accept="image/gif" class="upfile" value="点击上传" style="width:70px;display:none;" />
+		</dd>
+	</dl>
+	<dl>
+		<dt>手机</dt>
+		<dd><input type="text" placeholder="18617120543" disabled /></dd>
+	</dl>
+	<dl>
+		<dt>等级</dt>
+		<dd class="houxv"><a href="hyintro.html"><i class="lev lev2" style="vertical-align: middle"></i></a></dd>
+	</dl>
+</div>
+<div class="mydata">
+	<dl>
+		<dt>姓名</dt>
+		<dd><input type="text" placeholder="真实姓名"/></dd>
+	</dl>
+	<dl>
+		<dt>性别</dt>
+		<dd>
+			<label><input type="radio" name="sex" checked />男</label>
+			<label><input type="radio" name="sex" />女</label>
+		</dd>
+	</dl>
+	<dl>
+		<dt>生日</dt>
+		<dd><input type="date" placeholder="你的生日" value="1990-12-02" /></dd>
+	</dl>
+	<dl>
+		<dt>手机</dt>
+		<dd><input type="number" placeholder="188888"/></dd>
+	</dl>
+	<dl>
+		<dt>身份证</dt>
+		<dd><input type="number" placeholder="你的身份证"></dd>
+	</dl>
+	<dl>
+		<dt>地址</dt>
+		<dd><input type="text" placeholder="住宅地址"></dd>
+	</dl>
+	<dl>
+		<dt>爱好</dt>
+		<dd class="houxv"><input type="text" class="fav" value="请选择" /></dd>
+	</dl>
+</div>
+<script src="static/js/zepto.min.js"></script>
+<script>
+$(".fav").on("tap",function(){
+	location.href='fav.html';
+});
+$(".tt").on("tap",function(){
+	$(".upfile").click();
+});
+$(".upfile").on("change",function(){
+	alert($(this).val());
+});
+</script>
+</body></html>

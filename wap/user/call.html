@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="renderer" content="webkit">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="format-detection" content="telephone=no" />
+<title></title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" href="static/css/order.css" />
+</head>
+<body>
+<header>
+	<a href="javascript:history.go(-1);" class="headcha"><i class="icon-back">返回</i></a>
+	<h1>订单提交</h1>
+</header>
+<div class="calltip">
+	<img src="static/img/call.png" alt="" />
+	<h3>订单已提交，等待来电。</h3>
+	<p>稍后您会收到餐厅来电，请留意。</p>
+</div>
+<div class="callbt">
+	<a href="index.html">返回首页</a>
+	<a href="order.html">查看订单</a>
+</div>
+<div class="artcall">
+	<p>XXXX餐厅已按照您的要求帮您配好菜单。</p>
+	<a href="order.html" class="bt">查看</a>
+	<a class="closebt"></a>
+</div>
+<div class="mask" style="display:block;"></div>
+<script src="static/js/zepto.min.js"></script>
+<script>
+$(".closebt").on("tap",function(){
+	$(".artcall,.mask").hide();
+});
+</script>
+</body></html>

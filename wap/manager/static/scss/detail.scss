@@ -1,0 +1,215 @@
+@import 'base';
+/**收入明细**/
+.detailmain{
+	background:#fff;
+	padding-bottom:20px;
+	h3{
+		font-size:14px;
+		color:#333;
+		position:relative;
+		margin:0 15px;
+		line-height:45px;
+		border-bottom:1px solid #e5e5e5;
+		a{
+			color:$blue;
+			position:absolute;
+			right:0;
+			top:0;
+			&:after{
+				content:'';
+				width: 10px;
+        		height: 10px;
+				display:inline-block;
+				vertical-align: middle;
+		        border-right:2px solid $blue;
+		        border-bottom:2px solid $blue;
+		        -moz-transform:rotate(-45deg);
+		        -o-transform:rotate(-45deg);
+		        -webkit-transform: rotate(-45deg);
+		        -ms-transform: rotate(-45deg);
+		        transform: rotate(-45deg);
+			}
+		}
+	}
+	.main{
+		color:#333;
+		margin-left:15px;
+		line-height:22px;
+		padding:15px;
+		padding-left:0;
+		border-bottom:1px solid #e5e5e5;
+		span{
+			width:49%;
+			display:inline-block;
+			&:nth-child(2n){
+				text-align:right;
+			}
+		}
+	}
+	h4{
+		text-align:right;
+		font-size:14px;
+		color:#333;
+		padding-right:15px;
+		border-top:1px solid #e5e5e5;
+		margin-top:-1px;
+		line-height:45px;
+		span{
+			color:$defaultBgColor;
+		}
+	}
+	p{
+		color:#ccc;
+		padding:15px;
+		line-height:20px;
+	}
+}
+/**订单明细**/
+.orderdetail{
+	#odetailmenu{
+		background:#fff;
+		margin-bottom:10px;
+		ul{
+			display: -webkit-box;
+	        display: -moz-box;
+	        display: -ms-flexbox;
+	        display: flex;
+        }
+        li{
+        	-webkit-box-flex: 1;
+            -moz-box-flex: 1;
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            display:block;
+            position:relative;
+            text-align:center;
+            font-size:14px;
+            color:#333;
+            line-height:40px;
+            border-bottom:1px solid #fff;
+            &.current{
+            	color:$defaultBgColor;
+				border-color:$defaultBgColor;
+            	&:after{
+            		content:'';
+            		width: 0;
+				    height: 0;
+				    display: inline-block;
+				    border-bottom:5px solid $defaultBgColor;
+				    border-left:5px solid transparent;
+				    border-right:5px solid transparent;
+				    border-top:0;
+				    position:absolute;
+				    left:45%;
+				    bottom:0;
+            	}
+            }
+        }
+	}
+	.null{
+		color:#999;
+		font-size:14px;
+		text-align:center;
+		line-height:200px;
+	}
+	#odetailmain{
+    	overflow: hidden;
+    	position: relative;
+	    background:#fff;
+	    border-top:1px solid #e5e5e5;
+    	ul{
+	    	// position: relative;
+		    // width: 100%;
+		    // height: 100%;
+		    // display: -webkit-box;
+		    // display: -moz-box;
+		    // display: -ms-flexbox;
+		    // display: -webkit-flex;
+		    // display: flex;
+		    // -webkit-transform-style: preserve-3d;
+		    // -moz-transform-style: preserve-3d;
+		    // -ms-transform-style: preserve-3d;
+		    // transform-style: preserve-3d;
+		    // -webkit-transition-property: -webkit-transform;
+		    // -moz-transition-property: -moz-transform;
+		    // -o-transition-property: -o-transform;
+		    // -ms-transition-property: -ms-transform;
+		    // transition-property: transform;
+		    // -webkit-box-sizing: content-box;
+		    // -moz-box-sizing: content-box;
+		    // box-sizing: content-box;
+		    // z-index: 1;
+		    // -webkit-transform: translate3d(0px, 0, 0);
+		    // -moz-transform: translate3d(0px, 0, 0);
+		    // -o-transform: translate(0px, 0px);
+		    // -ms-transform: translate3d(0px, 0, 0);
+		    // transform: translate3d(0px, 0, 0);
+		}
+		.mmain{
+			-webkit-transform-style: preserve-3d;
+    		-moz-transform-style: preserve-3d;
+		    -ms-transform-style: preserve-3d;
+		    transform-style: preserve-3d;
+		    -webkit-flex-shrink: 0;
+		    -ms-flex: 0 0 auto;
+		    flex-shrink: 0;
+		    width: 100%;
+		    height: 100%;
+		    position: relative;
+		    text-align: center;
+		    display:none;
+		    &:first-child{
+		    	display:block;
+		    }
+		}
+		h3{
+			position:relative;
+			margin:0 10px;
+			text-align:left;
+			line-height:40px;
+			font-weight: normal;
+			span{
+				position:absolute;
+				top:0;
+				right:0;
+			}
+		}
+		table{
+			width:100%;
+			line-height:35px;
+			th,td{
+				border:1px solid #e5e5e5;
+				font-weight:normal;
+			}
+			td{
+				color:#999;
+				text-align:center;
+				a{
+					color:$blue;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	p{
+		text-align:center;
+		background:#eee;
+		padding:30px 0;
+	}
+}
+.newlpop{
+	@extend %pop;
+	.popmain{
+		width:90%;
+		p{
+			text-align:left;
+			span{
+				margin-right:15px;
+				&:last-of-type{
+					margin-right:0;
+				}
+			}
+		}
+	}
+}

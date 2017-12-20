@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" style="font-size:10px;">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>亲爱的！生日快乐！</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<style>
+#divdown1{font-size: 10rem;
+    color: #fff;
+    font-family: 'Nixie One', cursive;
+    font-weight: 300;
+    text-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+	text-align:center;
+	width:100%;
+}
+.a_demo_five {
+	text-align:center;
+    background-color: #3bb3e0;
+    width: 185px;
+   	margin:30px auto;
+    display:block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-image: linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+    background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(44,160,202)), color-stop(1, rgb(62,184,229)) );
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -webkit-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+    -moz-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+    -o-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+    box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+}
+/* .a_demo_five:before {
+    background-color: #fff;
+    background-image: url(http://www.html5tricks.com/demo/CSSButtonsPseudoElements/images/heart.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    content: "";
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    top: -30px;
+    left: 0px;
+    margin-top: -11px;
+    z-index: -1;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+} */
+.a_demo_five:active {
+	top:0px;
+	background-image: linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
+	background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, rgb(62,184,229)),
+	color-stop(1, rgb(44,160,202))
+	);
+	-webkit-box-shadow: inset 0px 4px 1px #0b698b, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
+	-moz-box-shadow: 0px 2px 0px 1px #156785, 0px 5px 3px #999;
+	-o-box-shadow: 0px 2px 0px 1px #156785, 0px 5px 3px #999;
+	box-shadow: inset 0px 4px 1px #0b698b, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
+}
+.a_demo_five:active::before {
+	top: -30px;	
+	-webkit-box-shadow: 0px 3px 0px #ccc;
+	-moz-box-shadow: 0px 3px 0px #ccc;
+	-o-box-shadow: 0px 3px 0px #ccc;
+	box-shadow: 0px 3px 0px #ccc;
+}
+#container_buttons {
+    margin: 0 auto;
+    background: rgba(255,255,255,0.3);
+    padding: 60px 60px 30px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.09) inset;
+}
+.hided{display:none;}
+#kl{border:none;background:#fff;border-radius:25px;line-height:45px;width:200px;margin:0 auto;display:block;font:16px/45px 'Microsoft YaHei';color:#000;text-align: center;}
+.heart {
+  background: url(http://demo.htmleaf.com/1511/201511131551/images/web_heart_animation.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+  cursor: pointer; 
+  background-size: 2900%; //实际背景图片尺寸2900px
+}
+.heart:hover{
+  background-position: right; //显示最后一个红心帧
+}
+.likeCount{
+  margin-top: 13px;
+  margin-left: 28px;
+  font-size: 16px;
+  color: #999999
+}    
+ 
+.heart:active {
+  -webkit-animation-name: heartBlast;
+  animation-name: heartBlast;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: steps(28); 
+  animation-timing-function: steps(28);
+  background-position: right;
+}
+
+@-webkit-keyframes heartBlast {
+  0% {background-position: left;}
+  100% {background-position: right;}
+}
+ 
+@keyframes heartBlast {
+  0% {background-position: left;}
+  100% {background-position: right;}
+}            
+</style>
+</head>
+<body style="background: #772953;">
+	
+</body>
+
+</head> 
+<body> 
+<div style="width:100%;text-align:center;margin-top:20px;">
+<svg version="1.1" baseProfile="full" viewBox="0 0 45 96" id="m3path" height="190px" width="90px" class="aa">
+    <switch>
+    <path stroke="rgb( 248, 104, 189 )" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+       d="M5,28 
+       C20,28 35,28 40,28 
+       C40,28 22,55 5,70 
+       C5,70 35,70 40,70"/>
+     <foreignObject>
+        <div class="m3-svg-nosupport"></div>
+     </foreignObject>
+ </switch>
+</svg>
+<svg aria-hidden="true" role="img" viewBox="0 0 44 96" height="190px" width="88px" class="letter letter-s letter-2 aa">
+	<path d="m 2 48 m 0 -20 a 20 20 0 1 1 0 40 a 20 20 0 1 1 0 -40" stroke-width="1" stroke-linecap="butt" stroke="#f8f8f8" fill="none" style="stroke-dashoffset: 251.363; stroke-dasharray: 125.681, 157.102, 31.4204;"></path>
+	<path d="m 42 48 m 0 -20 a 20,20 0 1 1 0,40 a 20 20 0 1 1 0 -40" stroke-width="1" stroke-linecap="butt" stroke="#f8f8f8" fill="none" style="stroke-dashoffset: 251.363; stroke-dasharray: 125.681, 93.2611, 33.4204, 92.2611, 125.681;"></path>
+</svg>
+<svg aria-hidden="true" role="img" viewBox="0 0 45 96" height="190px" width="90px" class="letter letter-h letter-3 aa">
+	<!-- <path d="m 22.5 48 m 0 -20 a 20,20 0 1 0 0,40 " stroke-width="1" stroke-linecap="butt" stroke="#f8f8f8" fill="none"></path> -->
+	<path stroke="rgb( 106, 72, 247 )" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+       d="M5 0
+       c15,70 5,70 5,70
+       C5,70 35,70 40,65"/>
+
+</svg>
+</div>
+<div id="divdown1"></div>
+<section id="lovein">
+    <div id="container_buttons">
+    	<input type="text" placeholder="输入口令" id="kl"/>
+        <p>
+            <a class="a_demo_five" href="javascript:void(0)">
+                Love this open!
+            </a>
+        </p>
+        <!-- <div class="heart" id="like3" rel="like"></div> -->
+    </div>
+</section>
+
+<script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+<script language="javascript" type="text/javascript"> 
+/*var interval = 1000; 
+function ShowCountDown(year,month,day,divname) 
+{ 
+var now = new Date(); 
+var endDate = new Date(year, month-1, day); 
+var leftTime=endDate.getTime()-now.getTime(); 
+var leftsecond = parseInt(leftTime/1000); 
+console.log(leftsecond);
+if(leftsecond < "0"){
+
+	document.getElementById("lovein").className = "";
+	document.getElementById("lovein").getElementsByTagName("a")[0].setAttribute("href","index2.html");
+}
+//var day1=parseInt(leftsecond/(24*60*60*6)); 
+var day1=Math.floor(leftsecond/(60*60*24)); 
+var hour=Math.floor((leftsecond-day1*24*60*60)/3600); 
+var minute=Math.floor((leftsecond-day1*24*60*60-hour*3600)/60); 
+var second=Math.floor(leftsecond-day1*24*60*60-hour*3600-minute*60); 
+var cc = document.getElementById(divname); 
+cc.innerHTML = hour+":"+minute+":"+second; 
+} 
+window.setInterval(function(){ShowCountDown(2016,4,7,'divdown1');}, interval); */
+
+$(".a_demo_five").on("click",function(){
+	var sl = $("#kl").val();
+	switch(sl){
+		case '0301':
+			location.href="index2.html";
+		break;
+		case '我爱你':
+			location.href="index1.html";
+		break;
+		default:
+			alert("这都猜不中 好意思吗！");
+		break;
+	}
+});
+</script> 
+</body> 
+</html> 

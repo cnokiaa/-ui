@@ -1,0 +1,65 @@
+@import 'base';
+.messagemain{
+	li{
+		margin-bottom:5px;
+		padding:0 #{15/2/$htmlfsize}rem;
+		font-size:#{12/$htmlfsize}rem;
+		background:$divBgColor;
+		h3{
+			line-height:#{80/2/$htmlfsize}rem;
+			font-size:#{14/$htmlfsize}rem;
+			font-weight:normal;
+			&:before{
+				content:'';
+				background:url(../img/mes.png) 0 0 no-repeat;
+				background-size:(25px/2);/* 
+				width:#{25/2/$htmlfsize}rem;
+				height:#{16/2/$htmlfsize}rem; */
+				width:(25px/2);
+				height:(16px/2);
+				display:inline-block;
+				margin-right:2px;
+			}
+			span{
+				color:$fontlColor;
+				float:right;
+			}
+		}
+		div{
+			padding:#{25/2/$htmlfsize}rem;
+			background:$bgColor;
+			border-radius:5px;
+			color:$fontColor;
+			line-height:20px;
+			position:relative;
+			display:none;
+			&:before{
+				    content: "";
+				    width: 0;
+				    height: 0;
+				    display: inline-block;
+				    border-bottom: 10px solid #eee;
+				    border-left: 8px solid transparent;
+				    border-right: 8px solid transparent;
+				    border-top: 0;
+				    position: absolute;
+				    left: 20px;
+				    top: -10px;
+			}
+		}
+		&.active{
+			padding-bottom:#{15/$htmlfsize}rem;
+			div{display:block;}
+		}
+		&.read{
+			h3{
+				color:$fontlColor;
+				&:before{
+					background-position:0 -8px;
+					/* height:#{24/2/$htmlfsize}rem; */
+					height:(24px/2);
+				}
+			}
+		}
+	}
+}

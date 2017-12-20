@@ -1,0 +1,10 @@
+index.html	首页
+income-detail.html	收入明细
+order-detail.html	订单明细
+hypj.html		会员评价
+bxmanager.html		包厢经理
+fwmx.html		服务明细
+login.html		登录
+findpw.html		找回密码
+findpw_step.html	找回密码完成
+setpw.html		修改密码

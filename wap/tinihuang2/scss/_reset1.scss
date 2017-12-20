@@ -1,0 +1,183 @@
+/*CSS reset*/
+$htmlfsize:20;
+@charset "utf-8";
+html{color:#000;background:#FFF;font-family:Microsoft YaHei,sans-serif,Arial,'宋体';}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td,strong{padding:0;margin:0;font-family:Microsoft YaHei,sans-serif,Arial;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+a{text-decoration:none; color:#333; outline:none;}/*此处待添加默认链接颜色*/
+var,em,strong{font-style:normal;}
+address,caption,cite,code,dfn,em,strong,th,var, optgroup{font-style:inherit;font-weight:inherit;}
+del,ins{text-decoration:none;}
+li{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content:'';}
+abbr,acronym{border:0;font-variant:normal;}
+sup{vertical-align:baseline;}
+sub{vertical-align:baseline;}
+legend{color:#000;}
+input,button,textarea,select,optgroup,option{font-family:inherit; font-size:inherit;font-style:inherit;font-weight:inherit;}
+input,button,textarea,select{*font-size:100%;}
+.clearfix:after {display:block;height:0;content:"\200B";clear:both;} 
+/*body{-webkit-user-select:none;-webkit-text-size-adjust:none;-webkit-transform-style:preserve-3d;}*/
+*{-webkit-tap-highlight-color:rgba(0,0,0,0);}
+.ellipsis{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+input[type="button"], input[type="submit"], input[type="reset"] {-webkit-appearance:none;}
+html,body{min-height:100%}
+input {
+	outline:none;
+	border:0;
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+    -moz-box-shadow: 0 0 0px 1000px #fff inset;
+    -ms-box-shadow: 0 0 0px 1000px #fff inset;
+    -o-box-shadow: 0 0 0px 1000px #fff inset;
+    box-shadow: 0 0 0px 1000px #fff inset;
+}
+/*导航*/
+.nav {
+	background-color: #fff;
+	padding-top:0.63rem;
+}
+.nav-step {
+	position:relative;
+	margin:0 7.5%;
+	img{
+		width:100%;
+		height:100%;
+		display:block;
+	}
+}
+.nav-inner {
+	position: absolute;
+	width: 100%;
+	height: 0.53rem;
+	top: 0.24rem;
+	left:0;
+}
+.nav-bar {
+	height: 100%;
+	/* background-color: #efeff4; */
+}
+.progress {
+	position: absolute;
+	left:0.3rem;
+	top: 0.43rem;
+	width: 0;
+	height: 0.09rem;
+	background-color: #007aff;
+	-webkit-border-radius: 0.27rem;
+	-moz-border-radius: 0.27rem;
+	-ms-border-radius: 0.27rem;
+	-o-border-radius: 0.27rem;
+	border-radius: 0.27rem;
+}
+.active2 {
+	width: 33%;
+}
+.active3 {
+	width:65%;
+}
+.active4 {
+	width:93%;
+}
+.nav-inner ul {
+	position: absolute;
+	left: 0;
+	top:0;
+	width: 100%;
+	height: 100%;
+}
+.nav-inner ul li {
+	position: absolute;
+	top: 0;
+	color: #090909;
+	font: normal 0.6rem/0.95rem "Microsoft YaHei";
+	/* width: 1.5rem;
+	height: 1.5rem;
+	margin-left: -0.75rem;
+	background-color: #efeff4;
+	text-align: center;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-box-shadow: 0 0 0 1px #aeb0b1;
+	-moz-box-shadow: 0 0 0 1px #aeb0b1;
+	-ms-box-shadow: 0 0 0 1px #aeb0b1;
+	-o-box-shadow: 0 0 0 1px #aeb0b1;
+	box-shadow: 0 0 0 1px #aeb0b1; */
+}
+.nav-inner ul li:nth-child(1) {
+	left: 0.23rem;
+}
+.nav-inner ul li:nth-child(2) {
+	left: 33.5%;
+}
+.nav-inner ul li.on:nth-child(2),.nav-inner ul li.active:nth-child(2){
+	left:31.5%;
+}
+.nav-inner ul li:nth-child(3) {
+	left: 63.7%;
+}
+.nav-inner ul li.on:nth-child(3),.nav-inner ul li.active:nth-child(3){
+	left:61.5%;
+}
+.nav-inner ul li:nth-child(4) {
+	right: 0.6rem;
+}
+.nav-inner ul li.on:nth-child(4),.nav-inner ul li.active:nth-child(4){
+	right:0.25rem;
+}
+.nav-inner ul .on,.nav-inner ul .active {
+	height:0.95rem;
+	width:0.95rem;
+	border-radius: 0;
+	background: url("../images/nav_active.png") no-repeat;
+	color: #fff;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-ms-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-ms-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+	text-indent:-999em;
+}
+.nav-inner ul .on{
+	background:url("../images/nav_on.png") no-repeat;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-ms-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-ms-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+}
+.nav-inner ul .pass {
+	background-color: #02a7e3;
+	color: #fff;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-ms-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+}
+.nav-tit li {
+	float: left;
+	width: 25%;
+	height: 1.65rem;
+	color: #000;
+	font: normal 0.6rem/1.65rem "Microsoft YaHei";
+	text-align: center;
+}
+.nav-tit .active {
+	color: #007aff;
+}

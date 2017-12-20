@@ -1,0 +1,527 @@
+@import 'base';
+
+.myinfo{
+	background:url(../img/loginbg.png);
+	width:100%;
+	height:#{250/2/$htmlfsize}rem;
+	background-position:0 -160px;
+	.minfonone{
+		text-align:center;
+	}
+	img{
+		border-radius:100%;
+		width:#{70/$htmlfsize}rem;
+		height:#{70/$htmlfsize}rem;
+		/* border:2px solid #b19472; */
+		margin-top:#{15/$htmlfsize}rem;
+	}
+	p{
+		color:$fontColor;
+		font-size:#{16/$htmlfsize}rem;
+		
+	}
+	.minfoh{
+		overflow:hidden;
+		padding-top:#{10/$htmlfsize}rem;
+		.myinfoimg{
+			float:left;
+			width:29%;
+			text-align:right;
+			vertical-align: top;
+			img{
+				margin-right:#{10/$htmlfsize}rem;
+			}
+			span{
+				color:$defaultBgColor;
+				text-decoration: underline;
+			}
+		}
+		.minforight{
+			float:left;
+			width:70%;
+			margin-top:#{20/$htmlfsize}rem;
+			position:relative;
+			&:after{
+				content:'';
+				position:absolute;
+				display:block;
+				right:10px;
+				top:20px;
+				width: 10px;
+			    height: 10px;
+			    border-right: 2px solid #fff;
+			    border-bottom: 2px solid #fff;
+			    -moz-transform: rotate(-45deg);
+			    -o-transform: rotate(-45deg);
+			    -webkit-transform: rotate(-45deg);
+			    -ms-transform: rotate(-45deg);
+			    transform: rotate(-45deg);
+			}
+			p{
+				line-height:#{30/$htmlfsize}rem;
+			}
+			span{
+				padding-right:#{20/$htmlfsize}rem;
+			}
+		}
+	}
+}
+
+.lev{
+	background:url(../img/lev.png) no-repeat 0 -46px;
+	display:inline-block;    
+	vertical-align: sub;
+	width:21px;
+	height:24px;
+	&.lev2{
+		background-position:0 -94px;
+	}
+	&.lev3{
+		background-position:0 -70px;
+	}
+	&.lev4{
+		background-position:0 0;
+	}
+	&.lev5{
+		background-position:0 -23px;
+	}
+}
+
+.mymenu{
+	ul{
+		padding:0 #{15/$htmlfsize}rem;
+		margin-bottom:#{10/$htmlfsize}rem;
+		background:$divBgColor;
+	}
+	li{
+		color:$fontColor;
+		border-bottom:1px solid #f0f0f0;
+		line-height:#{40/$htmlfsize}rem;
+		position:relative;
+		font-size:#{14/$htmlfsize}rem;
+		a{
+			display:block;
+			&:after{
+				content: '';
+			    width: 10px;
+			    height: 10px;
+			    border-right: 1px solid #d0d0d0;
+			    border-bottom: 1px solid #d0d0d0;
+			    -webkit-transform: rotate(-45deg);
+			    -ms-transform: rotate(-45deg);
+			    transform: rotate(-45deg);
+			    position:absolute;
+			    right:0;
+			    top:15px;
+			}
+		}
+		i{
+			background:url(../img/my.png) no-repeat;
+			background-size:(46px/2);
+			display:inline-block;
+			vertical-align: middle;
+			width:(46px/2);
+			height:(46px/2);
+			margin-right:5px;
+			&.myicon{
+				background-position:0 -22px;
+			}
+			&.mlisticon{
+				background-position:0 -161px;
+			}
+			&.saleicon{
+				background-position:0 0;
+			}
+			&.collecticon{
+				background-position:0 -116px;
+			}
+			&.pointicon{
+				background-position:0 -138px;
+			}
+			&.commicon{
+				background-position:0 -93px;
+			}
+			&.friendicon{
+				background-position:0 -184px;
+			}
+			&.shareicon{
+				background-position:0 -46px;
+			}
+			&.seticon{
+				background-position:0 -69px; 
+			}
+			&.dataicon{
+				background-position:0 -235px;
+			}
+			&.mmoneyicon{
+				background-position:0 -210px;
+			}
+		}
+	}
+}
+
+.mypoint{
+	h3{
+		@extend %hname;
+		color:$fontColor;
+		b{
+			color:$defaultBgColor;
+			font-weight:normal;
+		}
+	}
+	.myptable{
+		margin-top:#{10/$htmlfsize}rem;
+		background:$divBgColor;
+		padding:#{40/2/$htmlfsize}rem #{32/2/$htmlfsize}rem;
+		table{
+			width:100%;			
+			border:1px solid #e5e5e5;
+			border-width:1px 1px 0 0;
+			tr{
+				th,td{
+					color:$fontlColor;
+					font-size:#{14/$htmlfsize}rem;
+					border:1px solid #e5e5e5;
+					border-width:0 0 1px 1px;
+					line-height:#{56/2/$htmlfsize}rem;
+				}
+				td{
+					color:$fontColor;
+					text-align:center;
+				}
+			}
+		}
+	}
+}
+
+.recomm{
+	padding:#{40/2/$htmlfsize}rem #{30/2/$htmlfsize}rem;
+	background:$divBgColor;
+	dl{@extend %dl;}
+}
+.bookbt{
+	text-align:center;
+	margin-top:#{86/2/$htmlfsize}rem;
+	a{	
+		display:inline-block;
+		text-align:center;
+		background:$defaultBgColor;
+		color:$divBgColor;
+		border-radius:3px;
+		line-height:40px;
+		width:90%;
+		font-size:#{14/$htmlfsize}rem;
+	}
+}
+
+.mydata{
+	background:$divBgColor;
+	margin-top:10px;
+	padding:0 #{34/2/$htmlfsize}rem;
+	dl{
+		display: -webkit-box;
+	    display: -moz-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-pack: justify;
+	    -moz-box-pack: justify;
+	    -ms-flex-pack: justify;
+	    -webkit-box-align: center;
+	    -moz-box-align: justify;
+	    -ms-flex-align: center;
+	    justify-content: space-between;
+	    height:#{70/2/$htmlfsize}rem;
+	    line-height:#{70/2/$htmlfsize}rem;
+	    border-bottom:1px solid #f1f1f1;
+		overflow:hidden;
+		dt{
+			display:block;
+			-webkit-box-flex: 2;
+		    -moz-box-flex: 2;
+		    -webkit-flex: 2;
+		    -ms-flex: 2;
+		    flex: 2;		    
+		    font-size:#{14/$htmlfsize}rem;
+			color:$fontColor;
+			position:relative;
+		}
+		dd{
+			position:relative;
+			display:block;
+			-webkit-box-flex: 8;
+		    -moz-box-flex: 8;
+		    -webkit-flex: 8;
+		    -ms-flex:8;
+		    flex: 8;
+		    text-align:right;
+		    label{
+		    	padding-right:#{20/$htmlfsize}rem;
+			}
+		    input[type='text'],input[type='number']{
+		    	background: #fff;
+		    	width:100%;
+		    	border:none;
+		    	height:#{68/2/$htmlfsize}rem;
+		    	line-height:#{68/2/$htmlfsize}rem;
+				text-align:right;
+			    font-size:#{14/$htmlfsize}rem;
+				color:$fontColor;
+		    }
+		    img{
+		    	width:50px;
+		    	height:50px;
+		    	border-radius:100%;    
+		    	vertical-align: middle;
+		    	border:1px solid $fontlColor;
+		    }
+		    &.houxv{
+		    	&:after{
+		    		content:'';
+		    		display:inline-block;
+		    		width: 8px;
+				    height: 8px;
+				    border-right: 1px solid $fontlColor;
+				    border-bottom: 1px solid $fontlColor;
+				    -webkit-transform: rotate(-45deg);
+				    -ms-transform: rotate(-45deg);
+				    transform: rotate(-45deg);
+				    margin-right: 5px;
+    				vertical-align: middle;
+		    	}
+		    }
+		}
+	}
+}
+
+.fav{
+	dl{
+		background:#fff;
+		margin-bottom:10px;
+		padding:0 #{30/2/$htmlfsize}rem;
+		dt{
+			color:$fontColor;
+			font-size:#{28/2/$htmlfsize}rem;
+			height:#{80/2/$htmlfsize}rem;
+			line-height:#{80/2/$htmlfsize}rem;
+		}
+		dd{
+			color:$fontlColor;
+		}
+		a{
+			display:inline-block;
+			border:1px solid #eaeaea;
+			padding:0 #{10/$htmlfsize}rem;
+			height:#{50/2/$htmlfsize}rem;
+			line-height:#{50/2/$htmlfsize}rem;
+			font-size:#{28/2/$htmlfsize}rem;
+			border-radius:5px;
+			margin-bottom:#{20/2/$htmlfsize}rem;
+			margin-right:#{20/2/$htmlfsize}rem;
+			&.active{
+				border-color:$defaultBgColor;
+				color:$defaultBgColor;
+			}
+		}
+		&.choosem{
+			a:before{
+				content:'+';
+			}
+			a.active:before{
+				content:'-';
+			}
+		}
+		&.editm{
+			a{
+				border-color:$defaultBgColor;
+				color:$defaultBgColor;
+				/* &:before{
+					content:'-';
+				} */
+			}
+			dd{
+				p{
+					color:$fontlColor;
+					font-size:#{28/2/$htmlfsize}rem;
+					text-align:center;
+					line-height:#{50/$htmlfsize}rem;
+				}
+			}
+		}
+	}
+}
+
+.questiona{
+	background:#fff;
+	line-height:#{20/$htmlfsize}rem;
+	padding:0 10px;
+	pre{
+		word-break: break-all;
+	    word-wrap: break-word;
+	    white-space: pre-wrap;
+	    white-space: -moz-pre-wrap;
+	    white-space: -pre-wrap;
+	    white-space: -o-pre-wrap;
+	    b{
+	    	font-size:#{16/$htmlfsize}rem;
+	    }
+	}
+}
+
+.qa-bus{
+	padding:0 0;
+	h4{
+		border:1px solid #efefef;
+		border-width:1px 0;
+		line-height:45px;
+		color:#333;
+		font-size:16px;
+		padding:0 15px;
+	}
+	h5{
+		font-size:14px;
+		line-height:40px;
+		padding:0 15px;
+		position:relative;
+		&:after{
+			content:'';
+			position:absolute;
+			right:15px;
+			top:10px;
+			@extend %jt;
+			transition:all ease 0.5s;
+			-moz-transition:all ease 0.5s;
+			-webkit-transition:all ease 0.5s;
+			-o-transition:all ease 0.5s;
+			-ms-transition:all ease 0.5s;
+		}
+		&.active:after{
+			-moz-transform:rotate(-135deg);
+    		-o-transform:rotate(-135deg);
+			-webkit-transform: rotate(-135deg);
+		    -ms-transform: rotate(-135deg);
+		    transform: rotate(-135deg);
+			transition:all ease 0.5s;
+			-moz-transition:all ease 0.5s;
+			-webkit-transition:all ease 0.5s;
+			-o-transition:all ease 0.5s;
+			-ms-transition:all ease 0.5s;
+		}
+	}
+	pre{
+		color:#999;
+		padding:0 15px;
+		line-height:25px;
+		display:none;
+	}
+}
+
+.feedback{
+	text-align:center;
+	.feedbackm{
+		background:#fff;
+		padding:#{40/2/$htmlfsize}rem #{36/2/$htmlfsize}rem;
+		input,textarea{
+			border:1px solid #e5e5e5;
+			width:93%;
+			padding:#{24/2/$htmlfsize}rem 3%;
+			resize: none;
+			margin-top:#{30/2/$htmlfsize}rem;
+		}
+	}
+	button{
+		width:90%;
+		background:$defaultBgColor;
+		color:#fff;
+		font:14px/42px 'Microsoft YaHei';
+		border:none;
+		border-radius:5px;
+		margin-top:#{86/2/$htmlfsize}rem;
+	}
+}
+
+.quickpay{
+	width:90%;
+	margin:0 auto;
+	dl{
+		margin-top:20px;
+		&:after{
+			content: ".";
+		    display: block;
+		    height: 0;
+		    clear: both;
+		    visibility: hidden;
+
+		}
+	}
+	dt,dd{
+		float:left;
+		font-size:14px;
+		line-height:(58px/2);
+		input{
+			line-height:(58px/2);
+			height:(58px/2);
+			width:100%;
+			border:1px solid #e5e5e5;
+			text-indent:10px;
+		}
+	}
+	dd{
+		width:77%;
+		float:right;
+	}
+	p{
+		border-top:1px solid #e5e5e5;
+		overflow:hidden;
+		line-height:(96px/2);
+		font-size:14px;
+		margin-top:(38px/2);
+		position:relative;
+		&.paynum{
+			text-align:right;
+			margin-top:0;
+			span{
+				color:$defaultBgColor;
+			}
+		}
+		a{
+			position:absolute;
+			right:0;
+			top:0;
+			color:$defaultBgColor;
+			&:after{
+				content:'';
+				@extend %jt;
+				display:inline-block;
+				margin-right:2px;
+				-webkit-transform: rotate(-45deg);
+			    -ms-transform: rotate(-45deg);
+			    transform: rotate(-45deg);
+			}
+		}
+	}
+	button{
+		display:block;
+		background:$defaultBgColor;
+		font-size:14px;
+		color:#fff;
+		height:(70px/2);
+		line-height:(70px/2);
+		width:100%;
+		border:none;
+		border-radius:5px;
+		margin-top:30px;
+	}
+}
+
+.exitmy{
+	background:$defaultBgColor;
+	color:#fff;
+	width:90%;
+	margin:0 auto;
+	display:block;
+	text-align:center;
+	line-height:35px;
+	font-size:14px;
+	border-radius:5px;
+	margin-top:30px;
+}

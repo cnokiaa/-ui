@@ -1,0 +1,49 @@
+@import "base";
+.searchinput{
+	line-height:$headerHeight;
+	width:94%;
+	input{
+		width:85%;
+		border:none;
+		border-radius:5px;
+		height:#{60/2/$htmlfsize}rem;
+		text-indent:#{15/2/$htmlfsize}rem;
+		outline:0;
+	}
+}
+.searchmain{
+	background:$divBgColor;
+	padding-bottom:20px;
+	.removeall{
+		border:1px solid #e5e5e5;
+		display:block;
+		width:80%;
+		margin:0 auto;
+		text-align:center;
+		margin-top:20px;
+		line-height:30px;
+	}
+	li{
+		padding:0 #{30/2/$htmlfsize}rem;
+		font-size:#{14/$htmlfsize}rem;
+		color:$fontColor;
+		border-bottom:1px solid #ececec;
+		line-height:#{75/2/$htmlfsize}rem;
+		a{
+			display:block;
+			&:before{
+				content:'';
+				background: url(../img/base.png) 0 -323px;
+			    background-size: 25px;
+			    width: #{29/2/$htmlfsize}rem;
+			    height:#{28/2/$htmlfsize}rem;
+			    display: inline-block;
+			    vertical-align: middle;
+			}
+			.num{
+				float:right;
+				color:$bordercolor;
+			}
+		}
+	}
+}

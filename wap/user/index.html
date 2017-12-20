@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="renderer" content="webkit">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="format-detection" content="telephone=no" />
+<title>123</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" href="static/css/index.css" />
+</head>
+<body>
+<header>
+	<div class="nav-left">
+		<a>深圳<i class="citydown"></i></a>
+		<!--地区切换-->
+		<div class="c-city">
+			<a href="" class="active">深圳</a>
+			<a href="">广州</a>
+		</div>
+	</div>
+	<div class="indexsearch">
+		<a href="search.html">店名或地址搜索</a>
+	</div>
+	<div class="nav-right">
+		<i class="moreicon active"></i><!--有消息时添加active-->
+		<div class="showmore">
+			<a href=""><i class="saosicon"></i>扫一扫</a>
+			<a href="message.html"><i class="msicon active"></i>消息</a><!--有消息时添加active-->
+		</div>
+	</div>
+</header>
+<!--MOB SHARE BEGIN-->
+<div class="-mob-share-ui-button -mob-share-open">分享</div>
+<div class="-mob-share-ui" style="display: none">
+    <ul class="-mob-share-list">
+        <li class="-mob-share-weibo"><p>新浪微博</p></li>
+        <li class="-mob-share-tencentweibo"><p>腾讯微博</p></li>
+        <li class="-mob-share-qzone"><p>QQ空间</p></li>
+        <li class="-mob-share-qq"><p>QQ好友</p></li>
+        <li class="-mob-share-weixin"><p>QQ好友</p></li>
+    </ul>
+    <div class="-mob-share-close">取消</div>
+</div>
+<div class="-mob-share-ui-bg"></div>
+<!--MOB SHARE END-->
+<!--首页轮播-->
+<div class="swiper-container">
+  <ul class="swiper-wrapper">
+    <li class="swiper-slide"><a href=""><img src="http://p1.meituan.net/mmc/dbc70b32f22415bc55d1523d7141735c18365.jpg" alt=""></a></li>
+    <li class="swiper-slide"><a href=""><img src="http://p1.meituan.net/mmc/dbc70b32f22415bc55d1523d7141735c18365.jpg" alt=""></a></li>
+    <li class="swiper-slide"><a href=""><img src="http://p1.meituan.net/mmc/dbc70b32f22415bc55d1523d7141735c18365.jpg" alt=""></a></li>
+  </ul>
+  <div class="bullets"></div>
+</div>
+<!--筛选-->
+<div class="navbar">
+	<ul class="filter-ul">
+		<li class="filter-item">综合</li>
+		<li class="filter-item">地区</li>
+		<li class="filter-item">菜系</li>
+		<li class="filter-item"><a>人均</a></li>
+	</ul>
+	<div class="popover-filter" id="J_filterPopover">
+		<div class="filter-cont">
+			<ul class="option-list">
+				<li class="current"><a href="">距离</a></li>
+				<li><a href="">优惠</a></li>
+				<li><a href="">价格</a></li>
+			</ul>
+		</div>
+		<div class="filter-cont" id="J_area">
+			<ul class="option-list-1st tab-nav-filter-item">
+				<li class="nexthas current">附近</li>
+				<li class="nexthas">热门商区</li>
+				<li class="nexthas">罗湖区</li>
+				<li class="nexthas">龙岗区</li>
+				<li class="nexthas">南山区</li>
+				<li class="nexthas">宝安区</li>
+				<li class="nexthas">龙岗区</li>
+				<li class="nexthas">南山区</li>
+				<li class="nexthas">宝安区</li>
+			</ul>
+			<div class="option-list-2nd">
+				<ul class="tab-cont">
+					<li><a href="">全部</a></li>
+					<li><a href="">1</a></li>
+					<li><a href="">益田村</a></li>
+					<li><a href="">下梅林</a></li>
+					<li><a href="">莲花山公园</a></li>
+					<li><a href="">市民中心</a></li>
+					<li><a href="">华强北</a></li>
+				</ul>
+				<ul class="tab-cont">
+					<li><a href="">热门</a></li>
+					<li><a href="">下梅林</a></li>
+					<li><a href="">莲花山公园</a></li>
+					<li><a href="">市民中心</a></li>
+					<li><a href="">华强北</a></li>
+				</ul>
+				<ul class="tab-cont">
+					<li><a href="">益田村</a></li>
+					<li><a href="">下梅林</a></li>
+					<li><a href="">莲花山公园</a></li>
+					<li><a href="">市民中心</a></li>
+					<li><a href="">华强北</a></li>					
+					<li><a href="">益田村</a></li>
+					<li><a href="">下梅林</a></li>
+					<li><a href="">莲花山公园</a></li>
+					<li><a href="">市民中心</a></li>
+					<li><a href="">华强北</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="filter-cont">
+			<ul class="option-list">
+				<li><a href="">菜系1</a></li>
+				<li><a href="">菜系1</a></li><li><a href="">菜系1</a></li><li><a href="">菜系1</a></li>
+			</ul>
+		</div>
+		<div class="filter-cont">
+			<ul class="option-list">
+				<li class="current"><a href="">不限</a></li>
+				<li><a href="">2万以下</a></li>
+				<li><a href="">2-4万</a></li>
+				<li><a href="">4-6万</a></li>
+				<li><a href="">6万以上</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="mask" id="J_mask"></div>
+</div>
+<!--列表-->
+<div class="main">
+	<ul>
+		<li class="mainli"><a href="detail.html">
+			<div class="mainlil">
+				<img src="http://p1.meituan.net/200.0/deal/32855f62d21ca88189ddfbb1848a1d3c40235.jpg" alt="">
+			</div>
+			<div class="mainlir">
+				<h3>新桃园酒楼</h3>
+				<p>
+					<span class="bj">粤菜&nbsp;人均80&nbsp;wifi&nbsp;停车位</span>
+					<span class="juli">0.5km</span>
+				</p>
+				<p class="indexsale">
+					<span><i class="quanicon">券</i>满300减100</span>
+					<span><i class="huiicon">惠</i>一张优惠卷可用</span>
+				</p>
+			</div>
+		</a></li>
+		<li class="mainli"><a href="detail.html">
+			<div class="mainlil">
+				<img src="http://p1.meituan.net/200.0/deal/32855f62d21ca88189ddfbb1848a1d3c40235.jpg" alt="">
+			</div>
+			<div class="mainlir">
+				<h3>新桃园酒楼</h3>
+				<p>
+					<span>粤菜</span>
+					<span>人均80</span>
+					<span>wifi</span>
+					<span>停车位</span>
+					<span class="juli">0.5km</span>
+				</p>
+			</div>
+		</a></li>
+		<li class="mainli"><a href="detail.html">
+			<div class="mainlil">
+				<img src="http://p1.meituan.net/200.0/deal/32855f62d21ca88189ddfbb1848a1d3c40235.jpg" alt="">
+			</div>
+			<div class="mainlir">
+				<h3>新桃园酒楼</h3>
+				<p>
+					<span>粤菜</span>
+					<span>人均80</span>
+					<span>wifi</span>
+					<span>停车位</span>
+					<span class="juli">0.5km</span>
+				</p>
+			</div>
+		</a></li>
+		<li class="mainli"><a href="detail.html">
+			<div class="mainlil">
+				<img src="http://p1.meituan.net/200.0/deal/32855f62d21ca88189ddfbb1848a1d3c40235.jpg" alt="">
+			</div>
+			<div class="mainlir">
+				<h3>新桃园酒楼</h3>
+				<p>
+					<span>粤菜</span>
+					<span>人均80</span>
+					<span>wifi</span>
+					<span>停车位</span>
+					<span class="juli">0.5km</span>
+				</p>
+			</div>
+		</a></li>
+		<li class="mainli"><a href="detail.html">
+			<div class="mainlil">
+				<img src="http://p1.meituan.net/200.0/deal/32855f62d21ca88189ddfbb1848a1d3c40235.jpg" alt="">
+			</div>
+			<div class="mainlir">
+				<h3>新桃园酒楼</h3>
+				<p>
+					<span>粤菜</span>
+					<span>人均80</span>
+					<span>wifi</span>
+					<span>停车位</span>
+					<span class="juli">0.5km</span>
+				</p>
+			</div>
+		</a></li>
+		<li class="mainli"><a href="detail.html">
+			<div class="mainlil">
+				<img src="http://p1.meituan.net/200.0/deal/32855f62d21ca88189ddfbb1848a1d3c40235.jpg" alt="">
+			</div>
+			<div class="mainlir">
+				<h3>新桃园酒楼</h3>
+				<p>
+					<span>粤菜</span>
+					<span>人均80</span>
+					<span>wifi</span>
+					<span>停车位</span>
+					<span class="juli">0.5km</span>
+				</p>
+			</div>
+		</a></li>
+		<li class="mainli"><a href="detail.html">
+			<div class="mainlil">
+				<img src="http://p1.meituan.net/200.0/deal/32855f62d21ca88189ddfbb1848a1d3c40235.jpg" alt="">
+			</div>
+			<div class="mainlir">
+				<h3>新桃园酒楼</h3>
+				<p>
+					<span>粤菜</span>
+					<span>人均80</span>
+					<span>wifi</span>
+					<span>停车位</span>
+					<span class="juli">0.5km</span>
+				</p>
+			</div>
+		</a></li>
+	</ul>
+	<a class="loadmore">加载更多</a>
+</div>
+<!--底部悬浮栏-->
+<footer>
+<!--选中时a标签添加active，有消息时添加mes-->
+	<a href="index.html" class="footera active">
+		<i class="homeicon"></i>
+		<p>首页</p>
+	</a>
+	<a href="order.html" class="footera mes">
+		<i class="listicon"></i>
+		<p>订单</p>
+	</a>
+	<a href="my.html" class="footera mes">
+		<i class="myicon"></i>
+		<p>我的</p>
+	</a>
+	<a href="my.html" class="footera mes">
+		<i class="commicon"></i>
+		<p>评价</p>
+	</a>
+</footer>
+<script src="static/js/zepto.min.js"></script>
+<script src="static/js/swiper.jquery.min.js"></script>
+<script src="static/js/public.js"></script>
+<script id="-mob-share" src="http://f1.webshare.mob.com/code/mob-share.js?appkey=deb12a3c748c"></script>
+<script>
+var slider = new Swiper('.swiper-container', {
+    pagination: '.bullets',
+    paginationClickable: true,
+   // autoplay:3000,
+    loop:true
+});
+
+mobShare.config( {
+
+    debug: true, // 开启调试，将在浏览器的控制台输出调试信息
+
+    appkey: 'deb12a3c748c', // appkey
+
+    params: {
+        url: 'http://wiki.mob.com/sharesdk-for-web-api/', // 分享链接
+        title: '往往都是颠三倒四', // 分享标题
+        description: '2222222222222', // 分享内容
+        pic: 'http://www.jiathis.com/resource/images/index/jt2.png', // 分享图片，使用逗号,隔开
+    },
+
+    /**
+     * 分享时触发的回调函数
+     * 分享是否成功，目前第三方平台并没有相关接口，因此无法知道分享结果
+     * 所以此函数只会提供分享时的相关信息
+     * 
+     * @param {String} plat 平台名称
+     * @param {Object} params 实际分享的参数 { url: 链接, title: 标题, description: 内容, pic: 图片连接 }
+     */
+    callback: function( plat, params ) {
+    }
+
+} );
+
+$(".loadmore").on("tap",function(){
+	var dhtml = "";
+		dhtml += '<li class="mainli"><a href="detail.html"><div class="mainlil">';
+		dhtml += '<img src="http://p1.meituan.net/200.0/deal/32855f62d21ca88189ddfbb1848a1d3c40235.jpg" alt=""></div>';
+		dhtml += '<div class="mainlir"><h3>新桃园酒楼</h3><p><span>停车位</span><span class="juli">0.5km</span></p></div></a></li>';
+	$(".main ul").append(dhtml);
+});
+$(".moreicon").on("tap",function(){
+	if($(".showmore").hasClass("act")){
+		$(".showmore").removeClass("act");
+	} else {
+		$(".showmore").addClass("act");
+	}
+});
+/*地区切换事件*/
+$(".nav-left a").on("tap",function(){
+	if($(this).parent().hasClass("act")){
+		$(this).parent().removeClass("act");
+	} else {
+		$(this).parent().addClass("act");
+	}
+});
+</script>
+</body></html>

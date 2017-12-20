@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>地址</title>
+<link rel="stylesheet" href="static/css/demo.css" />
+</head>
+<body style="background:#fff;">
+<header>
+	<a href="javascript:history.go(-1);" class="headcha">返回</a>
+	<h1>填写收件地址</h1>
+</header>
+<div class="dz">
+	<p>请填写收件地址：</p>
+	<dl>
+		<dt>姓名</dt>
+		<dd><input type="text" class="uname" placeholder="收件人姓名"/></dd>
+	</dl>
+	<dl>
+		<dt>电话</dt>
+		<dd><input type="number" class="uphone" placeholder="收件人电话"/></dd>
+	</dl>
+	<dl>
+		<dt>省市</dt>
+		<dd><input type="text" placeholder="请选择" class="selectarea" /></dd>
+	</dl>
+	<dl>
+		<dt>详细地址</dt>
+		<dd><input type="text" class="xdz" placeholder="请输入" /></dd>
+	</dl>
+	<input type="submit" value="确定" />
+	<div class="selecta s_province">
+		<div class="samin">
+			<h3><a class="qx active">取消</a>选择省</h3>
+			<div class="main" name="s_province" id="s_province"></div>
+		</div>
+	</div>
+	<div class="selecta s_city">
+		<div class="samin">
+			<h3><a class="qx">返回</a>选择市</h3>
+			<div class="main" name="s_city" id="s_city"></div>
+		</div>
+	</div>
+	<div class="selecta s_county">
+		<div class="samin">
+			<h3><a class="qx">返回</a>选择区域</h3>
+			<div class="main" name="s_county" id="s_county"></div>
+		</div>
+	</div>
+	<div class="conv"></div>
+</div>
+<script src="static/js/jquery-1.10.2.js"></script>
+<script src="static/js/tipbox.js"></script>
+<script src="static/js/area.js"></script>
+<script>
+$(".selectarea").on("click",function(){
+	_init_area();
+	$(".s_province,.conv").show();
+	$(".s_province .main").html();
+});
+$("input[type='submit']").on("click",function(){
+	if (!$(".uname").val() || $(".uname").val().trim().length == 0) {
+		new TipBox({str:'收件人不能为空',setTime:'1500'});
+		return false;
+	}
+	if (!$(".uphone").val() || $(".uphone").val().trim().length == 0) {
+		new TipBox({str:'号码不能为空',setTime:'1500'});
+		return false;
+	}
+	if (!$(".selectarea").val() || $(".selectarea").val().trim().length == 0) {
+		new TipBox({str:'省市不能为空',setTime:'1500'});
+		return false;
+	}
+	if (!$(".xdz").val() || $(".xdz").val().trim().length == 0) {
+		new TipBox({str:'省市不能为空',setTime:'1500'});
+		return false;
+	}
+	new TipBox({str:'确认成功，耐心等待大奖到来吧~',setTime:'1500'});
+});
+</script>
+</body></html>

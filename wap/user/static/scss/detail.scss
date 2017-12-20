@@ -1,0 +1,231 @@
+@import 'base';
+.detail-info{
+	padding:#{20/2/$htmlfsize}rem #{30/2/$htmlfsize}rem;
+	background:$divBgColor;
+	overflow:hidden;
+	.detail-infol{
+		float:left;
+		width:(210%/610*100);
+		height:#{205/2/$htmlfsize}rem;
+		overflow:hidden;
+		img{
+			width:100%;
+			height:100%;
+		}
+	}
+	.detail-infor{
+		float:right;
+		width:(390%/610*100);
+		overflow:hidden;
+		font-size:#{14/$htmlfsize}rem;
+		h3{
+			font-size:#{16/$htmlfsize}rem;
+			line-height:30px;
+			a{
+				float:right;
+				width:30px;height:25px;
+				text-align:center;
+				i{			
+					$isize:(52px/2);
+					display:inline-block;		
+					background:url(../img/book.png) 0 -38px no-repeat;
+					background-size:$isize;
+					vertical-align:sub;
+					width:$isize;height:$isize;
+					text-indent:-999em;
+				}
+			}
+		}
+		p{
+			color:#666;
+			position:relative;
+			margin-top:5px;
+			span{
+				color:#999;
+				background:#fff;
+				min-width:#{102/2/$htmlfsize}rem;
+				font-size:#{12/$htmlfsize}rem;
+				line-height:#{40/2/$htmlfsize}rem;
+				text-align:center;
+				margin-top:5px;
+				display:inline-block;
+				border-radius:5px;
+				border:1px solid $fontlColor;
+			}
+			&:last-child{
+				margin:0;
+			}
+			.detail-addr{
+				display:block;
+				line-height:25px;
+				padding:0 15px;
+				-o-text-overflow:ellipsis;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;
+				&:before{
+					content:'';
+					background:url(../img/book.png) no-repeat 0 -3px;
+					background-size:34px;
+					width: 7px;
+					height:9px;
+					display:inline-block;
+					position:absolute;
+				    left:0;
+				    top:7px;
+				}
+				&:after{
+					content:'';
+				    width: 10px;
+				    height: 10px;
+				    border-right: 1px solid #d0d0d0;
+				    border-bottom: 1px solid #d0d0d0;
+				    -webkit-transform: rotate(-45deg);
+				    -ms-transform: rotate(-45deg);
+				    transform: rotate(-45deg);
+				    position:absolute;
+				    right:3px;
+				    top:8px;				    
+				}
+			}
+		}
+	}
+}
+.detail-act{
+	background:#fff;
+	padding:5px #{30/2/$htmlfsize}rem 10px;
+	a{
+		font-size:#{14/$htmlfsize}rem;
+		color:$divBgColor;
+		background:$defaultBgColor;
+		text-align:center;
+		width:48%;
+		display:inline-block;
+		border-radius:5px;
+		line-height:35px;
+		&:last-child{
+			background:#f1a400;
+		}
+	}
+}
+.detail{
+	font-size:#{12/$htmlfsize}rem;
+	color:$fontColor;
+	margin-top:10px;
+	.detail-sales{
+		line-height:#{25/$htmlfsize}rem;
+		padding:0 #{35/2/$htmlfsize}rem;
+		background:$divBgColor;
+		padding-bottom:10px;
+		margin-bottom:10px;
+		.tsmain{
+			overflow:hidden;
+			margin-left:-5px;
+			li{
+				position:relative;
+				width:31%;
+				height:#{70/$htmlfsize}rem;
+				float:left;
+				margin-top:5px;
+				margin-left:5px;
+				overflow:hidden;
+				i{
+					background:url(../img/colle.png) no-repeat 0 -15px;
+					background-size:(25px/2);
+					width:#{25/2/$htmlfsize}rem;
+					height:#{30/2/$htmlfsize}rem;
+					display:inline-block;
+					position:absolute;
+					right:5px;
+					top:0;
+					z-index:99;
+					&.active{
+						background-position:0 0;
+					}
+				}
+				img{
+					width:100%;
+					height:100%;
+				}
+				p{
+					font-size:10px;
+					position:absolute;
+					left:0;
+					bottom:0;
+					width:100%;
+					height:#{25/$htmlfsize}rem;
+					background:#fff;
+					opacity:.6;
+					filter:alpha(opacity=60);
+					color:#333;
+					span{
+						display:inline-block;
+						vertical-align: middle;
+						&.name{
+							width:70%;
+							-o-text-overflow:ellipsis;
+							white-space:nowrap;
+							text-overflow:ellipsis;
+							overflow:hidden;
+							text-indent:5px;
+						}						
+						&.price{
+							position:absolute;
+							right:5px;
+							top:0;
+							color:$defaultBgColor;
+						}
+					}
+				}
+			}
+		}
+		h4{
+			color:$fontlColor;
+			padding:5px 0;
+			font-size:#{14/$htmlfsize}rem;
+			a{
+				float:right;
+				font-size:#{12/$htmlfsize}rem;
+			}
+		}
+		.main{
+			padding-bottom:0;
+			dl{
+				display:block;
+				width:100%;
+				text-align:left;
+				dt{
+					display:inline-block;
+					vertical-align: top;
+					line-height:#{20/$htmlfsize}rem;
+				}
+				dd{
+					display:inline-block;
+					vertical-align: top;
+					width:75%;
+					line-height:#{20/$htmlfsize}rem;
+					i{
+						display: inline-block;
+					    color: red;
+					    vertical-align: 5px;
+    					margin-top: -5px;
+					    font-style: normal;
+					    font-size: 10px;
+					}
+				}
+			}
+		}
+		.table-main table{
+			border:1px solid $bordercolor;
+			border-width:1px 1px 0 0;
+			width:100%;
+			text-align:center;
+			th,td{
+				font-weight: normal;
+				border:1px solid $bordercolor;
+				border-width:0 0 1px 1px;
+			}
+		}
+	}
+}
+
+.newlpop{
+	@extend %pop;
+}

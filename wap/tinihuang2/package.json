@@ -1,0 +1,30 @@
+{
+  "name": "tinihuang2",
+  "version": "1.0.0",
+  "description": "tinihuan2des",
+  "main": "vendor.bundle.js",
+  "dependencies": {
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "css-loader": "^0.25.0",
+    "file-loader": "^0.9.0",
+    "moment": "^2.15.1",
+    "node-sass": "^3.10.0",
+    "sass-loader": "^4.0.2",
+    "jsx-loader": "^0.13.2",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.2",
+    "url-loader": "^0.5.7",
+    "zepto": "^1.2.0"
+  },
+  "devDependencies": {
+    "sass-loader": "^4.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

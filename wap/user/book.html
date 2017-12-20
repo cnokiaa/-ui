@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="renderer" content="webkit">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="format-detection" content="telephone=no" />
+<title></title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" href="static/css/book.css" />
+</head>
+<body>
+<header>
+	<a href="javascript:history.go(-1);" class="headcha"><i class="icon-back">返回</i></a>
+	<h1>在线预订</h1>
+</header>
+<h3 class="bookname">新桃园酒店</h3>
+<div class="book">
+	<div class="bookstep1">
+		<h4>用餐信息</h4>
+		<div class="bookmain">
+		<dl>
+			<dt>用餐人数</dt>
+			<dd>
+				<input type="text" placeholder="12"/>
+			</dd>
+		</dl>
+		<dl>
+			<dt>用餐时间</dt>
+			<dd>
+				<input type="datetime-local">&emsp;
+				<input type="text">
+			</dd>
+		</dl>
+		<dl>
+			<dt>包房信息</dt>
+			<dd>
+				<label><input type="radio" name="room" checked>只接受包房</label>
+				<label><input type="radio" name="room">接受包房或大厅</label>
+			</dd>
+		</dl>
+		<dl>
+			<dt>点菜方式</dt>
+			<dd>
+				<label><input type="radio" name="order" dataId="1" checked>自主点菜</label>
+				<label><input type="radio" name="order" dataId="2">推荐配菜</label>
+				<label><input type="radio" name="order" dataId="3">到店点菜</label>
+			</dd>
+		</dl>
+		<dl>
+			<dt>其他要求</dt>
+			<dd>
+				<textarea name="" id="" cols="30" rows="3"></textarea>
+			</dd>
+		</dl>
+		</div>
+	</div>
+</div>
+<div class="bookbt">
+	<a>下一页</a>
+</div>
+<script src="static/js/zepto.min.js"></script>
+<script>
+function StringToDate(DateStr) {
+    var converted = Date.parse(DateStr);  
+    var myDate = new Date(converted);  
+    if (isNaN(myDate))  
+    {   
+        //var delimCahar = DateStr.indexOf('/')!=-1?'/':'-';  
+        var arys= DateStr.split('-');  
+        myDate = new Date(arys[0],--arys[1],arys[2]);  
+    }
+    return myDate;  
+}
+$(".bookbt a").on("tap",function(){
+
+	var nowDate = new Date();
+	var timen = $("input[type='datetime-local']").val();
+	StringToDate(timen);
+	var st =  StringToDate(timen).getTime() - 28800000;
+	if(StringToDate(timen).getTime() - nowDate.getTime() > 28740000){
+		alert("成功");
+		return false;
+	} else {
+		alert("fuck");
+	}
+	switch($("input[name='order']:checked").attr("dataId")){
+		case "1":console.log(1);
+			window.location.href="self-order.html";
+		break;
+		case "2":
+			window.location.href="recomm-order.html";
+		break;
+		case "3":
+			window.location.href="index.html";
+		break;
+	}
+	return false;
+});
+</script>
+</body></html>

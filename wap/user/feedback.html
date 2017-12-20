@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="renderer" content="webkit">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="format-detection" content="telephone=no" />
+<title>用户反馈</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" href="static/css/my.css" />
+</head>
+<body>
+<header>
+	<a href="javascript:history.go(-1);" class="headcha"><i class="icon-back">返回</i></a>
+	<h1>意见反馈</h1>
+</header>
+<div class="feedback">
+	<div class="feedbackm">
+		<textarea rows="5" placeholder="请输入你的宝贵信息，我们将不断改进请输入你的宝贵信息，我们将不断改进..."></textarea>
+		<input type="number" placeholder="请输入您的手机号（选填）" />
+	</div>
+	<button>发送</button>
+</div>
+<script src="static/js/zepto.min.js"></script>
+<script src="static/js/tipbox.js"></script>
+<script>
+	$("button").on("tap",function(){
+		new TipBox({str:'感谢您的反馈',setTime:'1500'});
+	});
+</script>
+</body></html>

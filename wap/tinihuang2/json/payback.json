@@ -1,0 +1,9 @@
+{
+	"status":"success",
+	"data":{
+		"eachMoney":"100000.00",
+		"dueTime":"17",
+		"oneOffPayment":"3000.00",
+		"accountMoney":97000
+	}
+}

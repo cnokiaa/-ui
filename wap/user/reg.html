@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="renderer" content="webkit">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="format-detection" content="telephone=no" />
+<title></title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" href="static/css/login.css" />
+</head>
+<body>
+<header>
+	<!-- <a href="index.html" class="headcha">取消</a> -->
+	<h1>注册</h1>
+</header>
+<form>
+<div class="login">
+	<dl>
+		<dt>手机号：</dt>
+		<dd><input type="text" maxlength="11" required pattern="^0?1[3|4|5|8][0-9]\d{8}$" title="手机格式有误" /></dd>
+	</dl>
+	<dl>
+		<dt>验证码：</dt>
+		<dd><input type="text" required /><button>获取验证码</button></dd>
+	</dl>
+	<dl>
+		<dt>密码：</dt>
+		<dd><input type="text" required /></dd>
+	</dl>
+	<button type="submit" class="loginbt">注册</button>
+</div>
+</form>
+</body></html>

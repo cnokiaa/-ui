@@ -1,0 +1,16 @@
+{
+    "status":"success",
+    "errcode":"0000",
+    "errmsg":"成功",
+    "data":{
+        "systime":"2016-03-09 10:25:51",
+        "sid":"E2C78A4AF02645BE9A091939A50F4785",
+        "ratelist":[
+            {"periods":1,"rate":200.0,"productno":"PJ01","periodlen":1,"lenunit":"W"},
+            {"periods":1,"rate":300.0,"productno":"PJ02","periodlen":2,"lenunit":"W"},
+            {"periods":1,"rate":400.0,"productno":"PJ03","periodlen":3,"lenunit":"W"},
+            {"periods":1,"rate":600.0,"productno":"PJ04","periodlen":4,"lenunit":"W"}],
+        "hiappamt":10000, "orgid":"orgtnh","ismark":0,
+        "hasdebt":"N","loanlimit":3500,"discrate":0,"lowappamt":1000,
+        "busid":"queryproducts"}
+}

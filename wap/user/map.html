@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="renderer" content="webkit">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="format-detection" content="telephone=no" />
+<title></title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" href="static/css/detail.css" />
+<style type="text/css">  
+body, html,#l-map {width: 100%;height: 100%;overflow: hidden;margin:0;}  
+</style> 
+</head>
+<body>
+<header>
+	<a href="javascript:history.go(-1);" class="headcha"><i class="icon-back">返回</i></a>
+	<h1>商家详情</h1>
+	<a href="" class="sharei"><i>分享</i></a>
+	<a href="" class="collecti"><i>收藏</i></a>
+</header>
+<div id="l-map"></div>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=DuhcDD5jriL4GlSPSxndDv3s"></script>
+<script src="http://api.map.baidu.com/library/TrafficControl/1.4/src/TrafficControl_min.js"></script>
+
+<!-- <script type="text/javascript" src="http://api.map.baidu.com/api?type=quick&ak=EzZscNTS75cT7b5zGXv2ZRVZ&v=1.0"></script> -->
+<script type="text/javascript">
+/*var lurl = window.location.hash.split("#")[1];
+console.log(lurl);
+var map = new BMap.Map("l-map");
+var myadd = lurl;  
+map.addControl(new BMap.ZoomControl()); 
+    // 创建地址解析器实例
+    var myGeo = new BMap.Geocoder();
+    // 将地址解析结果显示在地图上,并调整地图视野
+    myGeo.getPoint(myadd, function(point){
+        if (point) {
+            map.centerAndZoom(point, 20);
+            map.addOverlay(new BMap.Marker(point));
+            var opts = {
+                width : 200,    // 信息窗口宽度
+                height: 60,     // 信息窗口高度
+                title : "", // 信息窗口标题
+                enableAutoPan : true //自动平移
+            }
+            //var infoWindow = new BMap.InfoWindow("地址："+myadd, opts);  // 创建信息窗口对象
+            map.openInfoWindow(infoWindow,point);
+            map.addEventListener("click", function(){          
+                map.openInfoWindow(infoWindow,point); //开启信息窗口
+            });
+        }
+    }, "");*/
+
+// 百度地图API功能
+var map = new BMap.Map("l-map");
+var point = new BMap.Point(116.331398,39.897445);
+map.centerAndZoom(point,20);
+var myadd = "南山区桃园地铁站A出口桃园路";
+// 创建地址解析器实例
+var myGeo = new BMap.Geocoder();
+// 将地址解析结果显示在地图上,并调整地图视野
+var lukuan = new BMapLib.TrafficControl({showPanel: true});
+map.addControl(lukuan);  
+lukuan.showTraffic();
+myGeo.getPoint(myadd, function(point){
+    if (point) {
+        map.centerAndZoom(point, 16);
+        map.addOverlay(new BMap.Marker(point));
+        var opts = {
+            width : 200,    // 信息窗口宽度
+            height: 60,     // 信息窗口高度
+            title : "", // 信息窗口标题
+            enableAutoPan : true //自动平移
+        }
+        var infoWindow = new BMap.InfoWindow("地址："+myadd, opts);  // 创建信息窗口对象
+        map.openInfoWindow(infoWindow,point);
+    }else{
+        function myFun(result){
+        var cityName = result.name;
+        map.setCenter(cityName);
+        }
+        var myCity = new BMap.LocalCity();
+        myCity.get(myFun);
+    }
+}, "深圳市");
+</script>
+</body></html>

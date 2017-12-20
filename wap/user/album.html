@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="renderer" content="webkit">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="format-detection" content="telephone=no" />
+<title>商家相册</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" href="static/css/album.css" />
+</head>
+<body>
+<header>
+	<a href="javascript:history.go(-1);" class="headcha"><i class="icon-back">返回</i></a>
+	<h1>商家相册</h1>
+</header>
+<div class="album">
+	<div id="albummenu">
+		<ul class="albummenul">
+			<li class="current">环境</li>
+			<li>菜系</li>
+			<!-- <li>大厅</li> -->
+			<li>包间</li>
+			<!-- <li>其他</li> -->
+		</ul>
+	</div>
+	<div id="albummain">
+		<div class="albumm">
+		<ul class="albul">
+			<li>
+				<div>
+					<a href="carousel.html"><img src="http://p1.meituan.net/200.0/deal/32855f62d21ca88189ddfbb1848a1d3c40235.jpg" alt="" /><p>1<span>￥10</span></p></a>
+				</div>
+			</li><li>
+				<div>
+					<a href="carousel.html"><img src="http://p1.meituan.net/200.0/deal/32855f62d21ca88189ddfbb1848a1d3c40235.jpg" alt="" /><p>2<span>￥10</span></p></a>
+				</div>
+			</li>
+			<li>
+				<div>
+					<a href="carousel.html"><img src="http://p1.meituan.net/200.0/deal/32855f62d21ca88189ddfbb1848a1d3c40235.jpg" alt="" /><p>3<span>￥10</span></p></a>
+				</div>
+			</li>
+			<li>
+				<div>
+					<a href="carousel.html"><img src=" " alt="" /><p>4<span>￥10</span></p></a>
+				</div>
+			</li>
+			<li>
+				<div>
+					<a href="carousel.html"><img src="http://p1.meituan.net/200.0/deal/32855f62d21ca88189ddfbb1848a1d3c40235.jpg" alt="" /><p>5<span>￥10</span></p></a>
+				</div>
+			</li>
+			<li>
+				<div>
+					<img src=" " alt="" /><p>6<span>￥10</span></p>
+				</div>
+			</li>
+			<li>
+				<div>
+					<img src="http://p1.meituan.net/200.0/deal/32855f62d21ca88189ddfbb1848a1d3c40235.jpg" alt="" /><p>川式大拌菜<span>￥10</span></p>
+				</div>
+			</li>
+		</ul>
+		<ul class="albul">
+			<li>
+				<div>
+					<img src="http://p1.meituan.net/200.0/deal/32855f62d21ca88189ddfbb1848a1d3c40235.jpg" alt="" /><p>川式大2拌菜<span>￥10</span></p>
+					<i></i>
+				</div>
+			</li>
+			<li>
+				<div>
+					<img src="http://p1.meituan.net/200.0/deal/32855f62d21ca88189ddfbb1848a1d3c40235.jpg" alt="" /><p>川式大拌菜<span>￥10</span></p>
+				</div>
+			</li>
+		</ul>
+		<ul class="albul">
+			<li>
+				<div>
+					<img src="http://p1.meituan.net/200.0/deal/32855f62d21ca88189ddfbb1848a1d3c40235.jpg" alt="" /><p>川式3大拌菜<span>￥10</span></p>
+				</div>
+			</li>
+			<li>
+				<div>
+					<img src="http://p1.meituan.net/200.0/deal/32855f62d21ca88189ddfbb1848a1d3c40235.jpg" alt="" /><p>川式大拌菜<span>￥10</span></p>
+				</div>
+			</li>
+		</ul>
+		<!-- <ul class="albul">
+			<li>
+				<div>
+					<img src="http://p1.meituan.net/200.0/deal/32855f62d21ca88189ddfbb1848a1d3c40235.jpg" alt="" /><p>川式大4拌菜<span>￥10</span></p>
+				</div>
+			</li>
+			<li>
+				<div>
+					<img src="http://p1.meituan.net/200.0/deal/32855f62d21ca88189ddfbb1848a1d3c40235.jpg" alt="" /><p>川式大拌菜<span>￥10</span></p>
+				</div>
+			</li>
+		</ul>
+		<ul class="albul">
+			<li>
+				<div>
+					<img src="http://p1.meituan.net/200.0/deal/32855f62d21ca88189ddfbb1848a1d3c40235.jpg" alt="" /><p>川式5大拌菜<span>￥10</span></p>
+				</div>
+			</li>
+			<li>
+				<div>
+					<img src="http://p1.meituan.net/200.0/deal/32855f62d21ca88189ddfbb1848a1d3c40235.jpg" alt="" /><p>川式大拌菜<span>￥10</span></p>
+				</div>
+			</li>
+		</ul> -->
+		</div>
+	</div>
+</div>
+<script src="static/js/zepto.min.js"></script>
+<script src="static/js/swiper.jquery.min.js"></script>
+<script>
+var mySwiper2 = new Swiper('#albummenu',{
+	wrapperClass:'albummenul',
+	slideClass:'albummenul li',
+	watchSlidesProgress : true,
+	watchSlidesVisibility : true,
+	slidesPerView :5,
+	onTap:function(){mySwiper3.slideTo(mySwiper2.clickedIndex);}
+});
+var mySwiper3 = new Swiper('#albummain',{
+	wrapperClass:'albumm',
+	slideClass:'albumm ul',
+	onSlideChangeStart:function(){updateNavPosition();}
+});
+function updateNavPosition(){
+	$('#albummenu li').removeClass('current');
+	var activeNav = $('#albummenu li').eq(mySwiper3.activeIndex).addClass('current');
+	if (!activeNav.hasClass('swiper-slide-visible')) {
+		if (activeNav.index()>mySwiper2.activeIndex) {
+			var thumbsPerNav = Math.floor(mySwiper2.width/activeNav.width())-1;
+			mySwiper2.slideTo(activeNav.index()-thumbsPerNav);
+		}
+		else {
+			mySwiper2.slideTo(activeNav.index());
+		}	
+	}
+}
+$(".albul i").on("tap",function(){
+	if($(this).hasClass("active")){
+		$(this).removeClass("active");
+	} else {
+		$(this).addClass("active");
+	}
+});
+</script>
+</body></html>
